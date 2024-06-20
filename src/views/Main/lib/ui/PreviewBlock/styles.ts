@@ -138,6 +138,8 @@ export const BottomWrapper = styled("div", {
 });
 
 export const CircleIcon = styled("div", {
+  position: "relative",
+
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -151,6 +153,26 @@ export const CircleIcon = styled("div", {
   "@media(max-width: 969px)": {
     width: 34,
     height: 34,
+  },
+});
+
+export const DecorShadow = styled(Image, {
+  width: "876px !important",
+  height: "876px !important",
+
+  top: "auto !important",
+  right: "auto !important",
+  left: "-300px !important",
+  bottom: "auto !important",
+
+  zIndex: "$blockBack",
+
+  "@media(max-width: 764px)": {
+    left: "-500px !important",
+  },
+
+  "@media(max-width: 400px)": {
+    display: "none",
   },
 });
 

@@ -29,12 +29,54 @@ export const Wrapper = styled("section", {
 
   "@media(max-width: 650px)": {
     padding: "0px 20px 200px",
+
+    margin: "154px auto 0",
   },
 });
 
 export const LeftWrapper = styled("div", {});
 
 export const RightWrapper = styled("div", {});
+
+export const InnerWrapperMint = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+});
+
+export const TopTitleMint = styled("p", {
+  fontSize: "40px",
+  lineHeight: "42px",
+
+  "& span": {
+    fontWeight: 800,
+  },
+
+  "@media(max-width: 830px)": {
+    fontSize: "32px",
+    lineHeight: "34px",
+  },
+
+  "@media(max-width: 600px)": {
+    fontSize: "28px",
+    lineHeight: "30px",
+  },
+
+  "@media(max-width: 505px)": {
+    fontSize: "24px",
+    lineHeight: "46px",
+  },
+
+  "@media(max-width: 450px)": {
+    fontSize: "20px",
+    lineHeight: "22px",
+  },
+
+  "@media(max-width: 330px)": {
+    fontSize: "16px",
+    lineHeight: "18px",
+  },
+});
 
 export const WrapperImage = styled("div", {
   position: "relative",
@@ -95,8 +137,10 @@ export const DecorImage = styled(Image, {
 
 export const Title = styled("h3", {
   fontSize: "80px",
-  lineHeight: "82px",
+  lineHeight: "110%",
   fontWeight: 600,
+
+  paddingBottom: 5,
 
   textAlign: "center",
 
@@ -107,6 +151,26 @@ export const Title = styled("h3", {
   "@media(max-width: 830px)": {
     fontSize: "65px",
     lineHeight: "67px",
+  },
+
+  "@media(max-width: 600px)": {
+    fontSize: "55px",
+    lineHeight: "57px",
+  },
+
+  "@media(max-width: 505px)": {
+    fontSize: "45px",
+    lineHeight: "47px",
+  },
+
+  "@media(max-width: 450px)": {
+    fontSize: "35px",
+    lineHeight: "37px",
+  },
+
+  "@media(max-width: 330px)": {
+    fontSize: "30px",
+    lineHeight: "32px",
   },
 });
 
@@ -141,10 +205,16 @@ export const InnerWrapBtn = styled("div", {
   alignItems: "center",
 
   gap: 10,
+
+  "& span": {
+    fontWeight: 700,
+  },
 });
 
 export const Block = styled("div", {
   backgroundColor: "$secondBlock",
+
+  position: "relative",
 
   display: "flex",
   alignItems: "center",
@@ -154,6 +224,31 @@ export const Block = styled("div", {
   borderRadius: 20,
 
   padding: 15,
+
+  variants: {
+    isActive: {
+      true: {
+        background: "$orangeToPinkVertical",
+      },
+    },
+  },
+});
+
+export const DoneIconWrapper = styled("div", {
+  position: "absolute",
+
+  display: "none",
+
+  top: 10,
+  right: 10,
+
+  variants: {
+    isActive: {
+      true: {
+        display: "block",
+      },
+    },
+  },
 });
 
 export const IconWrapper = styled("div", {

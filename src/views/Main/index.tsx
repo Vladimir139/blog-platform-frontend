@@ -18,7 +18,9 @@ export const MainPage: FC = () => (
     <PreviewBlock />
     <Container>
       <GuardianOfWeb3Freedom />
-      <WhatInItForMe />
+    </Container>
+    <WhatInItForMe />
+    <Container>
       <HodlingAlphaMindUnicorn />
     </Container>
     <DoIQualify />
@@ -26,7 +28,7 @@ export const MainPage: FC = () => (
       <NeedHelp />
       <JoinOurCommunity />
       <Faq />
-      {/* <StayConnected /> */}
+      <StayConnected />
     </Container>
   </>
 );

@@ -25,6 +25,7 @@ export const { styled, getCssText, keyframes, createTheme, css, theme } = create
       pinkToBlueGradient: "linear-gradient(90deg, rgba(202,55,143,1) 0%, rgba(18,58,197,1) 100%)",
       orangeToPinkGradient: "linear-gradient(90deg, rgba(255,138,0,1) 0%, rgba(173,0,255,1) 100%)",
       radialGradient: "linear-gradient(90deg, rgba(124,0,183,1) 15%, rgba(255,138,0,1) 100%)",
+      orangeToPinkVertical: "linear-gradient(0deg, rgba(184,17,224,1) 0%, rgba(245,121,32,1) 100%)",
     },
     shadows: {},
     fonts: {

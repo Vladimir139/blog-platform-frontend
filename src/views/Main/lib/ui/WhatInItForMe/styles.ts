@@ -1,6 +1,40 @@
+import Image from "next/image";
+
 import { styled } from "@/shared/lib/styles";
 
-export const Wrapper = styled("section", {});
+export const Wrapper = styled("section", {
+  position: "relative",
+
+  width: "100%",
+  maxWidth: 1540,
+
+  padding: "0 90px",
+  margin: "0 auto",
+
+  "@media(max-width: 1179px)": {
+    overflow: "hidden",
+  },
+
+  "@media(max-width: 650px)": {
+    padding: "0px 20px",
+  },
+});
+
+export const DecorShadow = styled(Image, {
+  width: "1372px !important",
+  height: "901px !important",
+
+  top: "-600px !important",
+  right: "0 !important",
+  left: "auto !important",
+  bottom: "auto !important",
+
+  zIndex: "$blockBack",
+
+  "@media(max-width: 1179px)": {
+    display: "none",
+  },
+});
 
 export const Title = styled("h3", {
   textAlign: "center",

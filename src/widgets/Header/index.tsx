@@ -9,9 +9,11 @@ import * as S from "./styles";
 
 export const Header: FC = () => {
   const isMobile = useMedia("(max-width: 490px)", false);
+  const isHidden = useMedia("(max-width: 400px)", false);
 
   return (
     <S.HeaderWrapper>
+      {!isHidden && <S.DecorShadow src="/images/header/headerGlow3.png" alt="decor glow" fill />}
       <S.LeftWrapper>
         <Link href="/">
           <FullLogoIcon isSmall={isMobile} />

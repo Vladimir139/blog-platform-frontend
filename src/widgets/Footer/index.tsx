@@ -19,6 +19,6 @@ export const Footer: FC = () => (
         </S.RightWrapper>
       </S.InnerWrapper>
     </Container>
-    {/* <S.BigGlowImage src="/images/footer/bigGlow1.png" alt="glow photo" fill /> */}
+    <S.BigGlowImage src="/images/footer/bigGlow1.png" alt="glow photo" fill />
   </S.FooterWrapper>
 );

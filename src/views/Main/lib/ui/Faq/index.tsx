@@ -6,6 +6,7 @@ import * as S from "./styles";
 
 export const Faq: FC = () => (
   <S.Wrapper>
+    {/* eslint-disable-next-line react/no-unescaped-entities */}
     <S.Title>FAQ'S</S.Title>
     <Accordion type="multiple" defaultValue={["1"]}>
       <AccordionItem value="1" header="What is the purpose of the AlphaMind Unicorn NFT?">

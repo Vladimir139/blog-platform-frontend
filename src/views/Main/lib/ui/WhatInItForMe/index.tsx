@@ -15,6 +15,7 @@ export const WhatInItForMe: FC = () => {
 
   return (
     <S.Wrapper>
+      {/* <S.DecorShadow src="/images/whatInItForMe/whatInItForMeGlow1.png" alt="decor glow" fill /> */}
       <S.Title>Whats in it for me?</S.Title>
       <S.AdvantageList>
         <S.Advantage>

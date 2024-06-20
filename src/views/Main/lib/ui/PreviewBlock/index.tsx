@@ -38,6 +38,7 @@ export const PreviewBlock: FC = () => {
         <S.WarningInfoBlock>
           <S.TopWrapper>
             <S.CircleIcon>
+              <S.DecorShadow src="/images/previewBlock/warningGlow1.png" alt="decor glow" fill />
               <WarningIcon isSmall={isMobileWarning} />
             </S.CircleIcon>
             <S.DecorLine />
@@ -58,6 +59,7 @@ export const PreviewBlock: FC = () => {
           <S.BottomWrapper>
             <S.LeftWrapperWarning>
               <S.CircleIcon>
+                <S.DecorShadow src="/images/previewBlock/warningGlow1.png" alt="decor glow" fill />
                 <WarningIcon />
               </S.CircleIcon>
             </S.LeftWrapperWarning>
