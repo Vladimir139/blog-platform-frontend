@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
 
-const Home: NextPage = () => <h1>Main page</h1>;
+import { MainPage } from "@/views";
+
+const Home: NextPage = () => <MainPage />;
 
 export default Home;
