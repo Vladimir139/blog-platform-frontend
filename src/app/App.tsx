@@ -10,10 +10,10 @@ export const App: FC<AppProps> = ({ children }) => {
   setupGlobalStyles();
 
   return (
-    <>
+    <S.AppWrapper>
       <Header />
       <S.Main>{children}</S.Main>
       <Footer />
-    </>
+    </S.AppWrapper>
   );
 };

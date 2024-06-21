@@ -11,9 +11,9 @@ export const Wrapper = styled("section", {
   padding: "0 90px",
   margin: "0 auto",
 
-  "@media(max-width: 1179px)": {
-    overflow: "hidden",
-  },
+  // "@media(max-width: 1179px)": {
+  //   overflow: "hidden",
+  // },
 
   "@media(max-width: 650px)": {
     padding: "0px 20px",
@@ -25,13 +25,17 @@ export const DecorShadow = styled(Image, {
   height: "901px !important",
 
   top: "-600px !important",
-  right: "0 !important",
+  right: "-850px !important",
   left: "auto !important",
   bottom: "auto !important",
 
   zIndex: "$blockBack",
 
   "@media(max-width: 1179px)": {
+    right: "-950px !important",
+  },
+
+  "@media(max-width: 764px)": {
     display: "none",
   },
 });

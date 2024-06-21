@@ -135,6 +135,33 @@ export const DecorImage = styled(Image, {
   },
 });
 
+export const DecorImageShadow = styled(Image, {
+  width: "auto !important",
+  height: "auto !important",
+  maxWidth: 1372,
+  maxHeight: 901,
+
+  top: "100px !important",
+  bottom: "auto !important",
+  left: "-700px !important",
+  right: "auto !important",
+
+  zIndex: "$blockBack",
+
+  "@media(max-width: 1450px)": {
+    left: "-1000px !important",
+    top: "-100px !important",
+  },
+
+  "@media(max-width: 1040px)": {
+    left: "-850px !important",
+  },
+
+  "@media(max-width: 850px)": {
+    display: "none",
+  },
+});
+
 export const Title = styled("h3", {
   fontSize: "80px",
   lineHeight: "110%",

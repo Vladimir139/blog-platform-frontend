@@ -174,7 +174,8 @@ export const DecorShadow = styled(Image, {
   },
 
   "@media(max-width: 400px)": {
-    display: "none",
+    // left: "-500px !important",
+    // top: "-100px !important",
   },
 });
 

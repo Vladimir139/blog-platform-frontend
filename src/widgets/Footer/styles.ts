@@ -28,6 +28,20 @@ export const BigGlowImage = styled(Image, {
   height: "auto !important",
 
   zIndex: "$blockBack",
+
+  "@media(max-width: 1230px)": {
+    height: "900px !important",
+    width: "100% !important",
+  },
+
+  "@media(max-width: 1000px)": {
+    height: "950px !important",
+    width: "1200px !important",
+  },
+
+  "@media(max-width: 740px)": {
+    height: "850px !important",
+  },
 });
 
 export const GlowImage = styled(Image, {
