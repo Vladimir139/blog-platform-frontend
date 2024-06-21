@@ -18,7 +18,7 @@ export const Collapse = styled(Root, {
   flexDirection: "column",
   gap: 75,
   "@media(max-width: 670px)": {
-    gap: 40,
+    gap: 20,
   },
 });
 

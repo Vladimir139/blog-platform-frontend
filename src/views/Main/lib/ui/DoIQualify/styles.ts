@@ -13,7 +13,7 @@ export const Wrapper = styled("section", {
   maxWidth: 1540,
 
   padding: "0 90px 256px",
-  margin: "274px auto 0",
+  margin: "293px auto 0",
 
   "@media(max-width: 1450px)": {
     flexDirection: "column-reverse",
@@ -30,7 +30,7 @@ export const Wrapper = styled("section", {
   "@media(max-width: 650px)": {
     padding: "0px 20px 200px",
 
-    margin: "154px auto 0",
+    margin: "115px auto 0",
   },
 });
 
@@ -177,7 +177,7 @@ export const Title = styled("h3", {
 export const SubText = styled("p", {
   textAlign: "center",
 
-  margin: "8px auto 40px",
+  margin: "11px auto 42px",
 
   maxWidth: 400,
 
@@ -188,7 +188,7 @@ export const SubText = styled("p", {
 });
 
 export const BlockList = styled("div", {
-  marginBottom: 38,
+  marginBottom: 40,
 
   display: "grid",
   gridTemplateColumns: "1fr 1fr",
@@ -284,5 +284,5 @@ export const LittleSubText = styled("p", {
   lineHeight: "18px",
   fontWeight: 500,
 
-  marginTop: 20,
+  marginTop: 12,
 });

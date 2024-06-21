@@ -13,7 +13,7 @@ export const Title = styled("h3", {
 
   textAlign: "center",
 
-  marginTop: 272,
+  marginTop: 306,
 
   "@media(max-width: 1140px)": {
     fontSize: "40px",
@@ -58,6 +58,11 @@ export const BlockInfoList = styled("ul", {
     gridTemplateColumns: "1fr 1fr",
     justifyContent: "center",
     alignItems: "center",
+
+    marginTop: 27,
+    marginBottom: 40,
+
+    gap: 10,
 
     "& > li:last-child:nth-child(odd)": {
       gridColumn: "1 / -1",

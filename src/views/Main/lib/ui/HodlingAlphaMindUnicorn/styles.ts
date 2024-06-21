@@ -23,6 +23,10 @@ export const Wrapper = styled("section", {
     padding: "20px 0 20px 30px",
   },
 
+  "@media(max-width: 764px)": {
+    marginTop: 124,
+  },
+
   "@media(max-width: 380px)": {
     padding: "15px 0 15px 15px",
   },

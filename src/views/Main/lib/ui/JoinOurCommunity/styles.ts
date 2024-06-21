@@ -29,7 +29,7 @@ export const Wrapper = styled("div", {
   },
 
   "@media(max-width: 740px)": {
-    marginTop: 131,
+    marginTop: 40,
   },
 });
 

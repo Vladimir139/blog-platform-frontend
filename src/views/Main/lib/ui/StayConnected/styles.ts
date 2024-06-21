@@ -15,7 +15,7 @@ export const WrapperInfo = styled("div", {
 
     gap: 10,
 
-    marginTop: 28,
+    marginTop: 24,
     marginBottom: 33,
   },
 });

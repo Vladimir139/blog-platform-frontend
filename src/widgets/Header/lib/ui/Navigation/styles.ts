@@ -25,8 +25,23 @@ export const NavItem = styled("div", {
       true: {
         width: 154,
 
+        "@media(max-width: 560px)": {
+          width: "auto",
+
+          "& button": {
+            borderRadius: "10px !important",
+            padding: "10px 25px",
+
+            width: "auto",
+          },
+        },
+
         "@media(max-width: 368px)": {
           width: "100%",
+
+          "& button": {
+            width: "100%",
+          },
         },
       },
     },

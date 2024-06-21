@@ -9,22 +9,18 @@ export const HeaderWrapper = styled("header", {
   alignItems: "center",
   justifyContent: "space-between",
 
-  maxHeight: 59,
-
   "@media(max-width: 650px)": {
     padding: "61px 20px",
   },
 
   "@media(max-width: 490px)": {
-    gap: 20,
+    padding: "20px",
 
-    maxHeight: "auto",
+    gap: 20,
   },
 
   "@media(max-width: 368px)": {
     flexDirection: "column",
-
-    padding: "20px",
   },
 });
 

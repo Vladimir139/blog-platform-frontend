@@ -11,7 +11,7 @@ export const WrapperPreview = styled("section", {
   },
 
   "@media(max-width: 650px)": {
-    padding: "30px 20px 0 20px",
+    padding: "0 20px 0 20px",
   },
 });
 
@@ -83,7 +83,9 @@ export const BlocksWrapper = styled("div", {
   },
 
   "@media(max-width: 450px)": {
-    marginTop: 90,
+    marginTop: 12,
+
+    gap: 0,
   },
 });
 
@@ -133,7 +135,7 @@ export const BottomWrapper = styled("div", {
   "@media(max-width: 1521px)": {
     flexDirection: "column",
 
-    gap: 10,
+    gap: 8,
   },
 });
 
