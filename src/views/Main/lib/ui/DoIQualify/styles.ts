@@ -136,25 +136,27 @@ export const DecorImage = styled(Image, {
 });
 
 export const DecorImageShadow = styled(Image, {
-  width: "auto !important",
-  height: "auto !important",
-  maxWidth: 1372,
-  maxHeight: 901,
+  width: "1372px !important",
+  height: "901px !important",
 
   top: "100px !important",
   bottom: "auto !important",
-  left: "-700px !important",
+  left: "-1100px !important",
   right: "auto !important",
 
   zIndex: "$blockBack",
 
+  "@media(max-width: 1590px)": {
+    left: "-900px !important",
+  },
+
   "@media(max-width: 1450px)": {
-    left: "-1000px !important",
+    left: "-1300px !important",
     top: "-100px !important",
   },
 
   "@media(max-width: 1040px)": {
-    left: "-850px !important",
+    left: "-1150px !important",
   },
 
   "@media(max-width: 850px)": {

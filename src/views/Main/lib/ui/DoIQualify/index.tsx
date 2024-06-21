@@ -22,7 +22,7 @@ export const DoIQualify: FC = () => {
           <S.StyledImage src="/images/doIQualify/pegasPhoto.png" alt="pegas photo" fill />
           <S.DecorImage src="/images/doIQualify/decorPegasImage.png" alt="pegas photo" fill />
           <S.DecorImageShadow
-            src="/images/doIQualify/doIQualifyShadow.png"
+            src="/images/doIQualify/doIQualifyShadow1.png"
             alt="pegas photo"
             fill
           />
