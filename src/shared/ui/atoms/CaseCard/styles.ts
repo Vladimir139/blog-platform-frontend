@@ -18,6 +18,10 @@ export const Wrapper = styled("div", {
 
   border: "1px solid #8080B754",
   borderRadius: 20,
+
+  "@media(max-width: 545px)": {
+    padding: "33px 29px 0 29px",
+  },
 });
 
 export const Title = styled("h3", {
@@ -26,6 +30,12 @@ export const Title = styled("h3", {
   fontWeight: 400,
 
   marginBottom: 17,
+
+  "@media(max-width: 545px)": {
+    fontSize: 20,
+
+    marginBottom: 7,
+  },
 });
 
 export const Description = styled("p", {

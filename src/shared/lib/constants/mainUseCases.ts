@@ -9,6 +9,11 @@ export const mainUseCases: CaseCardProps[] = [
     cssImage: {
       width: "421px !important",
       height: "343px !important",
+
+      "@media(max-width: 460px)": {
+        width: "331px !important",
+        height: "270px !important",
+      },
     },
   },
   {
@@ -22,6 +27,13 @@ export const mainUseCases: CaseCardProps[] = [
 
       bottom: "-12% !important",
       right: "0 !important",
+
+      "@media(max-width: 414px)": {
+        width: "231px !important",
+        height: "262px !important",
+
+        right: "-5% !important",
+      },
     },
   },
   {
@@ -35,6 +47,11 @@ export const mainUseCases: CaseCardProps[] = [
 
       bottom: "-12% !important",
       right: "0 !important",
+
+      "@media(max-width: 545px)": {
+        width: "258px !important",
+        height: "251px !important",
+      },
     },
   },
   {
@@ -48,6 +65,11 @@ export const mainUseCases: CaseCardProps[] = [
 
       bottom: "-5% !important",
       right: "-7% !important",
+
+      "@media(max-width: 545px)": {
+        width: "281px !important",
+        height: "230px !important",
+      },
     },
   },
   {
@@ -61,6 +83,14 @@ export const mainUseCases: CaseCardProps[] = [
 
       bottom: "-33% !important",
       right: "-11% !important",
+
+      "@media(max-width: 545px)": {
+        width: "270px !important",
+        height: "274px !important",
+
+        bottom: "-30% !important",
+        right: "-8% !important",
+      },
     },
   },
   {
@@ -74,6 +104,21 @@ export const mainUseCases: CaseCardProps[] = [
 
       bottom: "-13% !important",
       right: "-20% !important",
+
+      "@media(max-width: 545px)": {
+        width: "341px !important",
+        height: "225px !important",
+
+        bottom: "-7% !important",
+        right: "-5% !important",
+      },
+
+      "@media(max-width: 380px)": {
+        width: "286px !important",
+        height: "189px !important",
+
+        bottom: "-5% !important",
+      },
     },
   },
   {
@@ -86,6 +131,14 @@ export const mainUseCases: CaseCardProps[] = [
 
       bottom: "-64% !important",
       right: "-34% !important",
+
+      "@media(max-width: 545px)": {
+        width: "346px !important",
+        height: "364px !important",
+
+        bottom: "-40% !important",
+        right: "-25% !important",
+      },
     },
   },
 ];

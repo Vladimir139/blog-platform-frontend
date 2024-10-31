@@ -21,7 +21,7 @@ export const StyledTitle = styled("h3", {
 });
 
 export const SubTitle = styled("p", {
-  marginTop: 14,
+  margin: "14px 20px 0",
 
   fontSize: 16,
   lineHeight: "26px",

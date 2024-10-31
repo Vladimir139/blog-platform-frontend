@@ -13,7 +13,8 @@ export const RoadMap: FC = () => (
     <S.DecorImageRubinGlowLeft src="/images/decor/rubinGlow.png" alt="decor image" fill />
     <S.DecorImageRubinGlowBottom src="/images/decor/rubinGlow.png" alt="decor image" fill />
     <S.WrapperRoadmap>
-      <S.RoadmapLine src="/images/common/roadmapLine2.png" alt="roadmap line" fill />
+      <S.RoadmapLine src="/images/roadmap/roadmapLine2.png" alt="roadmap line" fill />
+      <S.RoadmapLineMobile src="/images/roadmap/roadmapLine2.png" alt="roadmap line" fill />
       <S.PhaseBlock blockNumber={1}>
         <S.PhaseBlueTitle>PHASE 1</S.PhaseBlueTitle>
         <S.PhaseTitle>Laying the Groundwork</S.PhaseTitle>

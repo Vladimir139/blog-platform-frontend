@@ -48,18 +48,36 @@ export const WrapperRoadmap = styled("div", {
   position: "relative",
   overflowX: "scroll",
 
-  justifyContent: "center", // Центрирует контент
+  justifyContent: "center",
 
   width: "100%",
   height: "839px",
 
   marginTop: 27,
+
+  "@media(max-width: 768px)": {
+    height: "504px",
+  },
 });
 
 export const RoadmapLine = styled(Image, {
   width: "2674px !important",
   height: "501px !important",
   objectFit: "cover",
+});
+
+export const RoadmapLineMobile = styled(Image, {
+  width: "2674px !important",
+  height: "501px !important",
+  objectFit: "cover",
+
+  display: "none",
+
+  "@media(max-width: 768px)": {
+    display: "block",
+
+    left: "2674px !important",
+  },
 });
 
 export const DecorImageBluePlanet = styled(Image, {
@@ -107,30 +125,65 @@ export const PhaseBlock = styled("div", {
       2: {
         top: 528,
         left: 281,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 650,
+        },
       },
       3: {
         top: 95,
         left: 650,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 1275,
+        },
       },
       4: {
         top: 528,
         left: 879,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 1988,
+        },
       },
       5: {
         top: 95,
-        left: 1275, // доделать
+        left: 1275,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 2610,
+        },
       },
       6: {
         top: 528,
         left: 1614,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 3315,
+        },
       },
       7: {
         top: 95,
-        left: 1988, // доделать
+        left: 1988,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 3945,
+        },
       },
       8: {
         top: 528,
         left: 2174,
+
+        "@media(max-width: 768px)": {
+          top: 95,
+          left: 4645,
+        },
       },
     },
   },

@@ -19,6 +19,18 @@ export const Wrapper = styled("section", {
   border: "1px solid #8080B754",
 
   borderRadius: 20,
+
+  "@media(max-width: 1024px)": {
+    padding: "33px",
+  },
+
+  "@media(max-width: 900px)": {
+    flexDirection: "column-reverse",
+  },
+
+  "@media(max-width: 550px)": {
+    padding: "20px",
+  },
 });
 
 export const DecorImageRubinGlow = styled(Image, {
@@ -52,6 +64,10 @@ export const WrapperInfo = styled("div", {
   justifyContent: "center",
 
   maxWidth: 415,
+
+  "@media(max-width: 900px)": {
+    maxWidth: "100%",
+  },
 });
 
 export const Title = styled("h3", {
@@ -60,6 +76,15 @@ export const Title = styled("h3", {
   fontWeight: 700,
 
   marginBottom: 26,
+
+  "@media(max-width: 900px)": {
+    textAlign: "center",
+  },
+
+  "@media(max-width: 550px)": {
+    fontSize: 23,
+    lineHeight: "25px",
+  },
 });
 
 export const Description = styled("p", {
@@ -70,6 +95,15 @@ export const Description = styled("p", {
   color: "#FFFFFF99",
 
   marginBottom: 32,
+
+  "@media(max-width: 900px)": {
+    textAlign: "center",
+  },
+
+  "@media(max-width: 550px)": {
+    fontSize: 14,
+    lineHeight: "22px",
+  },
 });
 
 export const LinkLearnMore = styled(Link, {
@@ -99,6 +133,12 @@ export const LinkLearnMore = styled(Link, {
     "-webkit-mask-composite": "xor",
     maskComposite: "exclude",
   },
+
+  "@media(max-width: 900px)": {
+    maxWidth: 300,
+
+    margin: "0 auto",
+  },
 });
 
 export const DecorImage = styled(Image, {
@@ -106,4 +146,13 @@ export const DecorImage = styled(Image, {
 
   width: "300px !important",
   height: "348px !important",
+
+  "@media(max-width: 900px)": {
+    margin: "0 auto",
+  },
+
+  "@media(max-width: 550px)": {
+    width: "213px !important",
+    height: "247px !important",
+  },
 });

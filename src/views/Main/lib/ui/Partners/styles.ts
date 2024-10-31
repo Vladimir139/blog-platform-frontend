@@ -10,9 +10,6 @@ export const Wrapper = styled("section", {
 export const PartnerImg = styled(Image, {
   position: "relative !important",
 
-  width: "auto !important",
-  height: "auto !important",
-
   margin: "15px 40px",
 
   opacity: 0.5,
@@ -20,48 +17,48 @@ export const PartnerImg = styled(Image, {
   variants: {
     partner: {
       cryptopunks: {
-        maxWidth: 81,
-        maxHeight: 10,
+        width: "81px !important",
+        height: "10px !important",
       },
       topshot: {
-        maxWidth: 81,
-        maxHeight: 17,
+        width: "81px !important",
+        height: "17px !important",
       },
       zed: {
-        maxWidth: 81,
-        maxHeight: 40,
+        width: "81px !important",
+        height: "40px !important",
       },
       sandbox: {
-        maxWidth: 81,
-        maxHeight: 25,
+        width: "81px !important",
+        height: "25px !important",
       },
       veefriends: {
-        maxWidth: 81,
-        maxHeight: 16,
+        width: "81px !important",
+        height: "16px !important",
       },
       rarible: {
-        maxWidth: 81,
-        maxHeight: 20,
+        width: "81px !important",
+        height: "20px !important",
       },
       ens: {
-        maxWidth: 81,
-        maxHeight: 32,
+        width: "81px !important",
+        height: "32px !important",
       },
       axie: {
-        maxWidth: 81,
-        maxHeight: 40,
+        width: "81px !important",
+        height: "40px !important",
       },
       opensea: {
-        maxWidth: 81,
-        maxHeight: 20,
+        width: "81px !important",
+        height: "20px !important",
       },
       bayc: {
-        maxWidth: 81,
-        maxHeight: 22,
+        width: "81px !important",
+        height: "22px !important",
       },
       dec: {
-        maxWidth: 81,
-        maxHeight: 40,
+        width: "81px !important",
+        height: "40px !important",
       },
     },
   },
