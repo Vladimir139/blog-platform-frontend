@@ -6,10 +6,15 @@ export const Wrapper = styled("section", {
 
 export const TokenInfoGrid = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr 1fr 1fr 1fr",
+  gridTemplateColumns:
+    "minmax(min-content, 164px) minmax(min-content, 265px) minmax(min-content, 325px) 1fr",
   // "minmax(min-content, 164px) minmax(min-content, 265px) minmax(min-content, 325px) 1fr",
 
   marginTop: 49,
+
+  "@media(max-width: 690px)": {
+    gridTemplateColumns: "1fr minmax(200px, 480px) 1fr",
+  },
 });
 
 export const Distribution = styled("div", {
@@ -17,6 +22,10 @@ export const Distribution = styled("div", {
   gridTemplateColumns: "1fr minmax(200px, 480px) minmax(200px, 480px) 1fr", // Четыре колонки
 
   marginTop: 152,
+
+  "@media(max-width: 640px)": {
+    gridTemplateColumns: "1fr minmax(200px, 480px) 1fr",
+  },
 });
 
 export const Percentages = styled("div", {
@@ -24,6 +33,10 @@ export const Percentages = styled("div", {
   gridTemplateColumns: "1fr minmax(200px, 480px) minmax(200px, 480px) 1fr", // Четыре колонки
 
   marginTop: 152,
+
+  "@media(max-width: 730px)": {
+    gridTemplateColumns: "1fr minmax(200px, 480px) 1fr",
+  },
 });
 
 export const TokenInfoBlock = styled("div", {
@@ -57,6 +70,11 @@ export const BlockTitle = styled("p", {
       true: {
         fontSize: 30,
         lineHeight: "38px",
+
+        "@media(max-width: 400px)": {
+          fontSize: 25,
+          lineHeight: "27px",
+        },
       },
     },
   },
