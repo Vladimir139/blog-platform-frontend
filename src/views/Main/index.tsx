@@ -2,33 +2,33 @@ import React, { FC } from "react";
 
 import { Container } from "@/shared/ui/atoms";
 import {
-  DoIQualify,
+  CoreValues,
   Faq,
-  GuardianOfWeb3Freedom,
-  HodlingAlphaMindUnicorn,
-  JoinOurCommunity,
-  NeedHelp,
+  GoToMarketStrategy,
+  MainUseCases,
+  OurTeam,
+  Partners,
   PreviewBlock,
-  StayConnected,
-  WhatInItForMe,
+  RoadMap,
+  Security,
+  Statistics,
+  Tokenomics,
 } from "@/views/Main/lib/ui";
 
 export const MainPage: FC = () => (
   <>
     <PreviewBlock />
+    <Partners />
+    <Statistics />
     <Container>
-      <GuardianOfWeb3Freedom />
+      <CoreValues />
+      <MainUseCases />
     </Container>
-    <WhatInItForMe />
-    <Container>
-      <HodlingAlphaMindUnicorn />
-    </Container>
-    <DoIQualify />
-    <Container>
-      <NeedHelp />
-      <JoinOurCommunity />
-      <Faq />
-      <StayConnected />
-    </Container>
+    <GoToMarketStrategy />
+    <Security />
+    <Tokenomics />
+    <RoadMap />
+    <OurTeam />
+    <Faq />
   </>
 );

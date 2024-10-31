@@ -2,329 +2,228 @@ import Image from "next/image";
 
 import { styled } from "@/shared/lib/styles";
 
-export const WrapperPreview = styled("section", {
-  width: "100%",
-  padding: "90px 90px 0 90px",
+export const Wrapper = styled("section", {
+  position: "relative",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
 
-  "@media(max-width: 1255px)": {
-    padding: "30px 90px 0 90px",
-  },
+  overflow: "hidden",
+});
 
-  "@media(max-width: 650px)": {
-    padding: "0 20px 0 20px",
+export const DecorImageStars = styled(Image, {
+  top: "-108px !important",
+  left: "50% !important",
+  right: "auto !important",
+  bottom: "auto !important",
+
+  transform: "translateX(-50%)",
+
+  zIndex: -5,
+
+  width: "1016px !important",
+  height: "269px !important",
+
+  "@media(max-width: 530px)": {
+    top: "-50px !important",
   },
 });
 
-export const LeftWrapper = styled("div", {
-  width: "100%",
-  maxWidth: 799,
+export const DecorImageBigGlow = styled(Image, {
+  top: "auto !important",
+  left: "50% !important",
+  right: "auto !important",
+  bottom: "-50% !important",
+
+  zIndex: -5,
+
+  transform: "translateX(-50%)",
+
+  width: "1514px !important",
+  height: "492px !important",
 });
 
-export const WrapperInfoBlock = styled("div", {
-  marginLeft: "auto",
-  maxWidth: 614,
+export const DecorImageRubinGlow = styled(Image, {
+  top: "-350px !important",
+  left: "auto !important",
+  right: "-80% !important",
+  bottom: "auto !important",
 
-  width: "100%",
+  zIndex: -5,
 
-  "@media(max-width: 1521px)": {
-    marginLeft: 0,
+  width: "732px !important",
+  height: "600px !important",
+});
+
+export const DecorImageBluePlanet = styled(Image, {
+  top: "-40px !important",
+  left: "-38% !important",
+  right: "auto !important",
+  bottom: "auto !important",
+
+  zIndex: -5,
+
+  width: "213px !important",
+  height: "232px !important",
+
+  "@media(max-width: 940px)": {
+    top: "30px !important",
+    left: "-15% !important",
   },
 
-  "@media(max-width: 969px)": {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-
-    margin: "0 auto",
-
-    "& button": {
-      width: "100%",
-
-      borderRadius: 10,
-
-      padding: 18,
-    },
+  "@media(max-width: 645px)": {
+    display: "none",
   },
 });
 
-export const WarningInfoBlock = styled("div", {
-  width: "100%",
+export const DecorImagePinkNlo = styled(Image, {
+  top: "-230px !important",
+  left: "auto !important",
+  right: "-230px !important",
+  bottom: "auto !important",
+
+  zIndex: -5,
+
+  width: "153px !important",
+  height: "156px !important",
+
+  "@media(max-width: 940px)": {
+    top: "-310px !important",
+    right: "-50px !important",
+  },
+
+  "@media(max-width: 780px)": {
+    top: "-290px !important",
+    right: "-50px !important",
+  },
+
+  "@media(max-width: 645px)": {
+    display: "none",
+  },
+});
+
+export const Slogan = styled("p", {
+  background: "#111131",
+  overflow: "hidden",
+  borderRadius: 20,
+  backdropFilter: "blur(42px)",
+
+  margin: "136px auto 32px",
+
+  fontSize: 16,
+  lineHeight: "26px",
+  fontWeight: 400,
+  color: "#F0EEFFD9",
+
+  width: "fit-content",
+
+  padding: "3px 14px",
+
+  "&::before": {
+    content: "",
+    position: "absolute",
+    inset: 0,
+
+    borderRadius: "50px",
+    padding: "1px",
+    background: `
+      radial-gradient(97.57% 210.75% at 0.9% 2.98%, rgba(239, 239, 239, 0) 0%, rgba(96, 96, 168, 0.5) 100%),
+      radial-gradient(97.09% 224.61% at 1.38% 96.94%, rgba(239, 239, 239, 0) 0%, rgba(93, 68, 219, 0.5) 100%),
+      linear-gradient(114.55deg, rgba(111, 84, 240, 0.5) 2.13%, rgba(111, 84, 240, 0) 98.14%)
+    `,
+
+    "-webkit-mask": "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+    "-webkit-mask-composite": "xor",
+    maskComposite: "exclude",
+  },
+
+  "& span": {
+    fontWeight: 700,
+    color: "#FFFFFF",
+  },
+
+  "@media(max-width: 530px)": {
+    margin: "76px 20px 32px",
+
+    textAlign: "center",
+  },
+});
+
+export const Title = styled("h2", {
+  fontSize: 64,
+  lineHeight: "75px",
+  fontWeight: 400,
+
+  textAlign: "center",
+
+  maxWidth: 817,
+
+  margin: "0 auto",
+
+  background: "linear-gradient(94.89deg, #FFFFFF 49.61%, #7217DA 129.22%)",
+  backgroundClip: "text",
+  "-webkit-background-clip": "text",
+  "-webkit-text-fill-color": "transparent",
+
+  "@media(max-width: 940px)": {
+    margin: "0 20px",
+  },
+
+  "@media(max-width: 780px)": {
+    fontSize: 50,
+    lineHeight: "60px",
+  },
+
+  "@media(max-width: 530px)": {
+    fontSize: 35,
+    lineHeight: "40px",
+  },
+});
+
+export const Description = styled("p", {
+  fontSize: 16,
+  lineHeight: "21px",
+  fontWeight: 400,
 
   position: "relative",
 
-  maxWidth: 741,
+  textAlign: "center",
 
-  "@media(max-width: 1521px)": {
-    top: 0,
+  color: "#FFFFFF99",
+
+  maxWidth: 625,
+
+  margin: "19px auto 79px",
+
+  "@media(max-width: 780px)": {
+    margin: "19px 20px 79px",
   },
 
-  "@media(max-width: 969px)": {
-    marginTop: 60,
-  },
-
-  "@media(max-width: 650px)": {
-    marginTop: 30,
-  },
-});
-
-export const BlocksWrapper = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "space-between",
-
-  "@media(max-width: 969px)": {
-    flexDirection: "column-reverse",
-    justifyContent: "center",
-  },
-
-  "@media(max-width: 650px)": {
-    gap: 20,
-  },
-
-  "@media(max-width: 450px)": {
-    marginTop: 12,
-
-    gap: 0,
+  "@media(max-width: 530px)": {
+    margin: "19px 20px 39px",
   },
 });
 
-export const TopWrapper = styled("div", {
-  position: "absolute",
-
-  top: -161,
-
-  "@media(max-width: 1521px)": {
-    position: "static",
-
-    marginBottom: 10,
-  },
-});
-
-export const DecorLine = styled("div", {
-  height: 141,
-  width: 1,
-
-  backgroundColor: "#FFFFFF",
-  margin: "0 40px 0",
-
-  "@media(max-width: 1521px)": {
-    height: 1,
-    width: 141,
-
-    marginLeft: "100px",
-
-    transform: "translateY(-40px)",
-  },
-
-  "@media(max-width: 969px)": {
-    width: 60,
-
-    marginLeft: "50px",
-
-    transform: "translateY(-20px)",
-  },
-});
-
-export const BottomWrapper = styled("div", {
-  display: "flex",
-  alignItems: "center",
-
-  gap: 30,
-
-  "@media(max-width: 1521px)": {
-    flexDirection: "column",
-
-    gap: 8,
-  },
-});
-
-export const CircleIcon = styled("div", {
-  position: "relative",
-
+export const ButtonsList = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
 
-  borderRadius: 999,
-  border: "1px solid #FFFFFF",
+  gap: 27,
 
-  width: 81,
-  height: 81,
+  width: "100%",
+  maxWidth: 409,
 
-  "@media(max-width: 969px)": {
-    width: 34,
-    height: 34,
-  },
-});
+  margin: "0 auto 114px",
 
-export const DecorShadow = styled(Image, {
-  width: "876px !important",
-  height: "876px !important",
+  "@media(max-width: 530px)": {
+    margin: "0 auto 64px",
+    padding: "0 20px",
 
-  top: "auto !important",
-  right: "auto !important",
-  left: "-300px !important",
-  bottom: "auto !important",
-
-  zIndex: "$blockBack",
-
-  "@media(max-width: 764px)": {
-    left: "-500px !important",
+    gap: 17,
   },
 
   "@media(max-width: 400px)": {
-    // left: "-500px !important",
-    // top: "-100px !important",
-  },
-});
-
-export const LeftWrapperWarning = styled("div", {});
-
-export const RightWrapperWarning = styled("div", {});
-
-export const WarningText = styled("p", {
-  fontFamily: "Inter",
-  fontSize: "16px",
-  lineHeight: "18px",
-  fontWeight: 300,
-  letterSpacing: "13px",
-
-  width: "100%",
-
-  "@media(max-width: 650px)": {
-    fontSize: "12px",
-    lineHeight: "14px",
-    fontWeight: 400,
-    letterSpacing: "9px",
-  },
-});
-
-export const WarningDescription = styled("p", {
-  fontFamily: "Inter",
-  fontSize: "14px",
-  lineHeight: "16px",
-  fontWeight: 400,
-
-  width: "100%",
-
-  "@media(max-width: 650px)": {
-    fontSize: "10px",
-    lineHeight: "12px",
-  },
-});
-
-export const Title = styled("h3", {
-  fontSize: "70px",
-  lineHeight: "72px",
-  fontStyle: "italic",
-  fontWeight: 800,
-
-  "@media(max-width: 1676px)": {
-    fontSize: "60px",
-    lineHeight: "62px",
-  },
-
-  "@media(max-width: 1365px)": {
-    fontSize: "50px",
-    lineHeight: "52px",
-  },
-
-  "@media(max-width: 1137px)": {
-    fontSize: "40px",
-    lineHeight: "42px",
-  },
-
-  "@media(max-width: 650px)": {
-    fontSize: "35px",
-    lineHeight: "37px",
-  },
-
-  "@media(max-width: 350px)": {
-    fontSize: "30px",
-    lineHeight: "32px",
-  },
-});
-
-export const WordGradient = styled("span", {
-  background: "linear-gradient(90deg, rgba(164,108,255,1) 14%, rgba(255,61,0,1) 68%)",
-  WebkitBackgroundClip: "text",
-  WebkitTextFillColor: "transparent",
-});
-
-export const Description = styled("p", {
-  fontSize: "28px",
-  lineHeight: "30px",
-  fontWeight: 400,
-
-  marginTop: 32,
-  marginBottom: 53,
-
-  "@media(max-width: 1676px)": {
-    fontSize: "24px",
-    lineHeight: "26px",
-  },
-
-  "@media(max-width: 1137px)": {
-    fontSize: "20px",
-    lineHeight: "22px",
-
-    marginTop: 13,
-    marginBottom: 25,
-  },
-
-  "@media(max-width: 969px)": {
-    textAlign: "center",
-  },
-
-  "@media(max-width: 650px)": {
-    fontSize: "17px",
-    lineHeight: "23px",
-  },
-});
-
-export const TextButton = styled("p", {
-  fontSize: "20px",
-  lineHeight: "22px",
-  fontWeight: 400,
-
-  "& span": {
-    fontWeight: 800,
-  },
-});
-
-export const RightWrapper = styled("div", {});
-
-export const StyledImage = styled(Image, {
-  position: "relative !important",
-
-  width: "auto !important",
-  height: "auto !important",
-  maxWidth: 910,
-  maxHeight: 964,
-
-  "@media(max-width: 1676px)": {
-    maxWidth: 681,
-    maxHeight: 730,
-  },
-
-  "@media(max-width: 1365px)": {
-    maxWidth: 538,
-    maxHeight: 570,
-  },
-
-  "@media(max-width: 1137px)": {
-    maxWidth: 540,
-    maxHeight: 477,
-  },
-
-  "@media(max-width: 650px)": {
-    maxWidth: 300,
-    maxHeight: 317,
-  },
-
-  "@media(max-width: 350px)": {
-    maxWidth: 271,
-    maxHeight: 286,
+    flexDirection: "column",
   },
 });

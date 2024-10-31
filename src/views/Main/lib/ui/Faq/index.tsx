@@ -1,76 +1,50 @@
 import React, { FC } from "react";
 
-import { Accordion, AccordionItem } from "@/shared/ui/atoms";
+import { Accordion, AccordionItem, Title } from "@/shared/ui/atoms";
 
 import * as S from "./styles";
 
 export const Faq: FC = () => (
   <S.Wrapper>
-    {/* eslint-disable-next-line react/no-unescaped-entities */}
-    <S.Title>FAQ'S</S.Title>
-    <Accordion type="multiple" defaultValue={["1"]}>
-      <AccordionItem value="1" header="What is the purpose of the AlphaMind Unicorn NFT?">
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-      <AccordionItem
-        value="2"
-        header="What are the basic onboarding tasks required to mint the Unicorn?"
-      >
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-      <AccordionItem value="3" header="Can I customize my AlphaMind Unicorn?">
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-      <AccordionItem value="4" header="How does the Karma System work?">
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-      <AccordionItem value="5" header="How do I bridge assets to mint the Unicorn NFT?">
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-      <AccordionItem
-        value="6"
-        header="What are the basic onboarding tasks required to mint the Unicorn?"
-      >
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-      <AccordionItem value="7" header="Can I trade or sell my AlphaMind Unicorn NFT?">
-        <S.AccordionContentBlock>
-          The AlphaMind Unicorn NFT Collection is a unique series of digital collectibles designed
-          to represent the journey and empowerment of our community members in the Web3 space. It
-          features the iconic AlphaMind Unicorn, a symbol of hope and transformation, along with
-          customizable elements like headgear, body armor, and horse shoes.
-        </S.AccordionContentBlock>
-      </AccordionItem>
-    </Accordion>
+    <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />
+    <Title
+      subTitle={`Got questions about Cryptory? We've got answers. Dive into our FAQ section\nto learn more.`}
+    >
+      Frequently Asked Questions
+    </Title>
+    <S.WrapperAccordion>
+      <Accordion type="multiple" defaultValue={["1"]}>
+        <AccordionItem value="1" header="What can Website AI do?">
+          Website AI is a cutting-edge tool that assists in generating website content, designs, and
+          layouts using artificial intelligence. It streamlines the website creation process, making
+          it efficient and user-friendly.
+        </AccordionItem>
+        <AccordionItem value="2" header="How do I access Cryptory?">
+          Website AI is a cutting-edge tool that assists in generating website content, designs, and
+          layouts using artificial intelligence. It streamlines the website creation process, making
+          it efficient and user-friendly.
+        </AccordionItem>
+        <AccordionItem value="3" header="Is Cryptoryfree to use?">
+          Website AI is a cutting-edge tool that assists in generating website content, designs, and
+          layouts using artificial intelligence. It streamlines the website creation process, making
+          it efficient and user-friendly.
+        </AccordionItem>
+        <AccordionItem value="4" header="How does the AI generate content?">
+          Website AI is a cutting-edge tool that assists in generating website content, designs, and
+          layouts using artificial intelligence. It streamlines the website creation process, making
+          it efficient and user-friendly.
+        </AccordionItem>
+        <AccordionItem value="5" header="Can I customize the AI-generated content?">
+          Website AI is a cutting-edge tool that assists in generating website content, designs, and
+          layouts using artificial intelligence. It streamlines the website creation process, making
+          it efficient and user-friendly.
+        </AccordionItem>
+        <AccordionItem value="6" header="Is my data safe with Cryptory?">
+          Website AI is a cutting-edge tool that assists in generating website content, designs, and
+          layouts using artificial intelligence. It streamlines the website creation process, making
+          it efficient and user-friendly.
+        </AccordionItem>
+      </Accordion>
+    </S.WrapperAccordion>
   </S.Wrapper>
 );

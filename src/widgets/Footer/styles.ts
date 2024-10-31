@@ -1,100 +1,241 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { styled } from "@/shared/lib/styles";
 
-export const FooterWrapper = styled("footer", {
-  padding: "30px 0 97px",
+export const Footer = styled("footer", {
+  border: "1px solid",
 
-  borderTop: "1px solid rgba(255, 255, 255, 0.5)",
+  borderImageSource: "linear-gradient(90deg, #0D0D59 0%, #306CFE 53.34%, #0D0D59 100%)",
 
-  marginTop: 62,
+  width: "100%",
 
   position: "relative",
 
-  "@media(max-width: 650px)": {
-    padding: "30px 0 67px",
+  "&::before": {
+    content: "",
+
+    position: "absolute",
+    top: 0,
+    left: 0,
+
+    width: "100%",
+    height: 1,
+
+    background: "linear-gradient(90deg, #0D0D59 0%, #306CFE 53.34%, #0D0D59 100%)",
   },
 });
 
-export const BigGlowImage = styled(Image, {
-  top: "auto !important",
-  bottom: "0 !important",
-  left: "auto !important",
-  right: "auto !important",
+export const InnerFooterWrapper = styled("div", {
+  maxWidth: 1076,
 
-  maxHeight: "1207px !important",
-  maxWidth: "1920px !important",
-  width: "auto !important",
-  height: "auto !important",
+  margin: "0 auto",
 
-  zIndex: "$blockBack",
-
-  "@media(max-width: 1230px)": {
-    height: "900px !important",
-    width: "100% !important",
-  },
-
-  "@media(max-width: 1000px)": {
-    height: "950px !important",
-    width: "1200px !important",
-  },
-
-  "@media(max-width: 740px)": {
-    height: "850px !important",
-  },
+  padding: "0 20px",
 });
 
-export const GlowImage = styled(Image, {
-  top: "auto !important",
-  bottom: "0 !important",
-  left: "0 !important",
-  right: "auto !important",
-
-  maxHeight: "1397px !important",
-  maxWidth: "852px !important",
-  width: "auto !important",
-  height: "auto !important",
-
-  zIndex: "$blockBack",
-});
-
-export const InnerWrapper = styled("div", {
+export const TopWrapper = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
 
-  gap: 20,
+  marginTop: 41,
 
-  "@media(max-width: 680px)": {
-    flexDirection: "column-reverse",
-    alignItems: "start",
+  "@media(max-width: 788px)": {
+    justifyContent: "center",
+    flexDirection: "column",
+
+    gap: 20,
   },
 });
 
 export const LeftWrapper = styled("div", {
-  fontSize: "12px",
-  lineHeight: "14px",
-  fontWeight: 500,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  justifyContent: "center",
+
+  width: "100%",
+  maxWidth: 366,
+});
+
+export const Description = styled("p", {
+  fontSize: 16,
+  lineHeight: "26px",
+  fontWeight: 400,
+  fontFamily: "$GilroyRegular",
+
+  marginTop: 54,
+  marginBottom: 32,
+
+  maxWidth: 350,
+  color: "#FFFFFF99",
+
+  marginLeft: 18,
+
+  "@media(max-width: 788px)": {
+    marginLeft: 0,
+  },
 });
 
 export const RightWrapper = styled("div", {
-  fontSize: "14px",
-  lineHeight: "16px",
-  fontWeight: 500,
+  display: "flex",
+  alignItems: "start",
+  justifyContent: "space-between",
 
+  gap: 10,
+
+  width: "100%",
+  maxWidth: 366,
+
+  marginTop: 60,
+});
+
+export const BottomWrapper = styled("div", {
   display: "flex",
   alignItems: "center",
-  gap: 80,
+  justifyContent: "space-between",
 
-  color: "$text",
+  gap: 10,
 
-  "& a": {
-    textDecoration: "none",
+  borderTop: "1px solid #FFFFFF1A",
 
-    whiteSpace: "nowrap",
+  marginTop: 100,
+
+  padding: "26px 0",
+
+  "@media(max-width: 500px)": {
+    flexDirection: "column",
+  },
+});
+
+export const StyledCryptoryLogo = styled(Image, {
+  position: "relative !important",
+
+  width: "100px !important",
+  height: "55px !important",
+});
+
+export const UseItOnTelegramLink = styled(Link, {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "start",
+
+  gap: 10,
+
+  width: 152,
+
+  marginLeft: 18,
+
+  background: "#09093F",
+  borderRadius: 8,
+
+  textDecoration: "none",
+
+  padding: "11px 10px",
+
+  "@media(max-width: 788px)": {
+    marginLeft: 0,
+  },
+});
+
+export const InfoTgLinkWrap = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  justifyContent: "center",
+
+  gap: 3,
+});
+
+export const LinkText = styled("p", {
+  fontSize: 8,
+  lineHeight: "9px",
+  fontWeight: 400,
+  fontFamily: "$OpenSans",
+});
+
+export const LinkTextBig = styled("p", {
+  fontSize: 14,
+  lineHeight: "16px",
+  fontWeight: 400,
+  fontFamily: "$OpenSans",
+});
+
+export const BlockLinks = styled("div", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  justifyContent: "center",
+
+  gap: 20,
+
+  width: "100%",
+});
+
+export const TitleLinks = styled("p", {
+  fontSize: 25,
+  lineHeight: "25px",
+  fontWeight: 600,
+  fontFamily: "$Inter",
+});
+
+export const ListLinks = styled("p", {
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "start",
+  justifyContent: "center",
+
+  gap: 10,
+});
+
+export const SocialNetworksList = styled("p", {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  gap: 15,
+});
+
+export const SocialNetwork = styled(Link, {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  width: 40,
+  height: 40,
+
+  border: "2px solid #FFFFFF1A",
+
+  borderRadius: 9999,
+});
+
+export const StyledLink = styled(Link, {
+  fontSize: 16,
+  lineHeight: "26px",
+  fontWeight: 400,
+  fontFamily: "$GilroyRegular",
+
+  textDecoration: "none",
+
+  color: "#FFFFFF99",
+});
+
+export const Copyrite = styled("p", {
+  fontSize: 16,
+  lineHeight: "26px",
+  fontWeight: 400,
+  fontFamily: "$GilroyRegular",
+
+  textDecoration: "none",
+
+  color: "#FFFFFF99",
+
+  "& span": {
+    color: "#7B7BFF",
   },
 
-  "@media(max-width: 794px)": {
-    gap: 40,
+  "@media(max-width: 500px)": {
+    textAlign: "center",
   },
 });

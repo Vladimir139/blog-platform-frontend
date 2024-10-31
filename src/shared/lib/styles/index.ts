@@ -12,25 +12,13 @@ export const media = {
 
 export const { styled, getCssText, keyframes, createTheme, css, theme } = createStitches({
   theme: {
-    colors: {
-      background: "#160044",
-      text: "#FFFFFF",
-
-      block: "#430069",
-      secondBlock: "#44016A",
-      lightBlock: "#50167D",
-
-      beige: "#FFC5C1",
-
-      pinkToBlueGradient: "linear-gradient(90deg, rgba(202,55,143,1) 0%, rgba(18,58,197,1) 100%)",
-      orangeToPinkGradient: "linear-gradient(90deg, rgba(255,138,0,1) 0%, rgba(173,0,255,1) 100%)",
-      radialGradient: "linear-gradient(90deg, rgba(124,0,183,1) 15%, rgba(255,138,0,1) 100%)",
-      orangeToPinkVertical: "linear-gradient(0deg, rgba(184,17,224,1) 0%, rgba(245,121,32,1) 100%)",
-    },
+    colors: {},
     shadows: {},
     fonts: {
-      inter: "Inter, sans-serif",
-      montserrat: "Montserrat, sans-serif",
+      Inter: "Inter, sans-serif",
+      Jost: "Jost, sans-serif",
+      GilroyRegular: "Gilroy-Regular, sans-serif",
+      OpenSans: "Open Sans, sans-serif",
     },
     fontSizes: {
       little: "11px",

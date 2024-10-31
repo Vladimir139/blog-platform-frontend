@@ -1,61 +1,28 @@
+import Image from "next/image";
+
 import { styled } from "@/shared/lib/styles";
 
 export const Wrapper = styled("section", {
-  marginBottom: 463,
+  marginTop: 82,
+  padding: "0 20px",
 
-  "@media(max-width: 740px)": {
-    marginBottom: 140,
-  },
+  position: "relative",
 });
 
-export const Title = styled("h3", {
-  textAlign: "center",
+export const DecorImageRubinGlow = styled(Image, {
+  top: "-200px !important",
+  left: "auto !important",
+  right: "-100px !important",
+  bottom: "auto !important",
 
-  fontSize: "50px",
-  fontWeight: 800,
-  lineHeight: "52px",
+  zIndex: -5,
 
-  marginTop: 225,
-  marginBottom: 75,
-
-  "@media(max-width: 1140px)": {
-    fontSize: "40px",
-    lineHeight: "42px",
-
-    marginTop: 142,
-    marginBottom: 28,
-  },
-
-  "@media(max-width: 670px)": {
-    fontSize: "30px",
-    lineHeight: "32px",
-  },
-
-  "@media(max-width: 580px)": {
-    fontSize: "26px",
-    lineHeight: "30px",
-  },
+  width: "732px !important",
+  height: "600px !important",
 });
 
-export const AccordionContentBlock = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
+export const WrapperAccordion = styled("div", {
+  maxWidth: 1027,
 
-  backgroundColor: "rgba(0, 0, 0, 0.4)",
-
-  padding: 40,
-
-  borderRadius: 20,
-
-  fontSize: "20px",
-  fontWeight: 400,
-  lineHeight: "22px",
-
-  "@media(max-width: 670px)": {
-    fontSize: "13px",
-    lineHeight: "15px",
-
-    padding: 20,
-  },
+  margin: "43px auto 99px",
 });

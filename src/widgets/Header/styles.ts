@@ -2,71 +2,40 @@ import Image from "next/image";
 
 import { styled } from "@/shared/lib/styles";
 
-export const HeaderWrapper = styled("header", {
-  position: "relative",
+export const Header = styled("header", {
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 
-  padding: "61px 90px",
+  padding: "23px 0 0",
 
+  borderBottom: "1px solid #FFFFFF1A",
+
+  "@media(max-width: 940px)": {
+    padding: "23px 0 23px",
+  },
+});
+
+export const InnerWrapperHeader = styled("header", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
 
-  "@media(max-width: 650px)": {
-    padding: "61px 20px",
-  },
+  maxWidth: 1200,
 
-  "@media(max-width: 490px)": {
-    padding: "20px",
-
-    gap: 20,
-  },
-
-  "@media(max-width: 368px)": {
-    flexDirection: "column",
-  },
+  padding: "0 20px",
+  width: "100%",
 });
 
-export const DecorShadow = styled(Image, {
-  width: "1329px !important",
-  height: "1329px !important",
+export const Logo = styled(Image, {
+  position: "relative !important",
 
-  top: "-400px !important",
-  right: "auto !important",
-  left: "auto !important",
-  bottom: "auto !important",
+  width: "90px !important",
+  height: "49px !important",
 
-  zIndex: "$blockBack",
+  marginBottom: 22,
 
-  overflow: "hidden",
-
-  "@media(max-width: 1444px)": {
-    left: "-150px !important",
-  },
-
-  "@media(max-width: 1200px)": {},
-
-  "@media(max-width: 900px)": {
-    left: "-250px !important",
-  },
-
-  "@media(max-width: 770px)": {
-    left: "-350px !important",
-  },
-
-  "@media(max-width: 500px)": {
-    left: "-450px !important",
-    top: "-730px !important",
-  },
-
-  "@media(max-width: 420px)": {
-    top: "-850px !important",
-  },
-});
-
-export const LeftWrapper = styled("div", {});
-
-export const RightWrapper = styled("div", {
-  "@media(max-width: 368px)": {
-    width: "100%",
+  "@media(max-width: 940px)": {
+    marginBottom: 0,
   },
 });

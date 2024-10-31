@@ -1,5 +1,5 @@
 {
-  "name": "kyotox",
+  "name": "cryptory",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -14,8 +14,11 @@
     "next": "13.3.0",
     "normalize.css": "^8.0.1",
     "react": "18.3.1",
+    "react-countup": "^6.5.3",
     "react-dom": "18.3.1",
-    "react-use": "^17.5.0"
+    "react-fast-marquee": "^1.6.5",
+    "react-use": "^17.5.0",
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
     "@types/node": "18.15.11",

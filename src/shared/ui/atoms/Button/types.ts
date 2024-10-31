@@ -4,4 +4,5 @@ export interface ButtonProps {
   children: ReactNode | string;
   stretch?: boolean;
   disabled?: boolean;
+  theme?: "purple" | "dark" | "outline";
 }

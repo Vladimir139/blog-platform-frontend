@@ -5,12 +5,13 @@ export const setupStyles = globalCss({
     scrollBehavior: "smooth",
   },
   body: {
-    backgroundColor: "$background",
-    color: "$text",
-    fontFamily: "Montserrat, sans-serif",
-    fontSize: "$large",
-    lineHeight: "22px",
+    backgroundColor: "#010123",
+    color: "#FFFFFF",
+    fontFamily: "$Jost",
+    fontSize: "15px",
+    lineHeight: "26px",
     transition: "$long",
+
     "&.overflow-hidden": {
       overflow: "hidden",
     },
