@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import { useMedia } from "react-use";
 
-import { StrategicPartnershipsIcon } from "@/shared/lib/icons";
 import { CellWithDots, Title } from "@/shared/ui/atoms";
 
 import * as S from "./styles";

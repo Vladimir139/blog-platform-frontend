@@ -15,7 +15,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>
@@ -24,7 +24,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>
@@ -33,7 +33,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>
@@ -42,7 +42,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>
@@ -51,7 +51,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>
@@ -60,7 +60,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>
@@ -69,7 +69,7 @@ export const OurTeam: FC = () => (
             <S.ImagePerson src="/images/common/person.png" alt="image person" fill />
             <S.NamePerson>Rio</S.NamePerson>
             <S.DescriptionPerson>
-              Digital Marketer and Content Creator that  seamlessly blends visions into workable
+              Digital Marketer and Content Creator that seamlessly blends visions into workable
               actions. With a keen eye for trends and a strategic mindset his aim is to best
               communicate our vision and goals.
             </S.DescriptionPerson>

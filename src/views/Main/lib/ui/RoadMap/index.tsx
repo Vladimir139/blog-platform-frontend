@@ -34,7 +34,7 @@ export const RoadMap: FC = () => (
           Building Core Functionality and Securing Funding. The focus shifts to developing essential
           platform features and successfully raising capital to fuel project growth. Key Objectives:
           Complete Platform interface and secure partnerships with utility projects. Design and
-          finalize the tokenomics model for the project's native token.
+          finalize the tokenomics model for the project&apos;s native token.
         </S.Description>
       </S.PhaseBlock>
       <S.PhaseBlock blockNumber={3}>
