@@ -11,21 +11,26 @@ export const RoadMap: FC = () => {
 
   useEffect(() => {
     const roadmapElement = roadmapRef.current;
-    if (!roadmapElement) return;
 
     const handleScroll = () => {
-      console.log("roadmapElement.scrollLeft", roadmapElement.scrollLeft);
-      if (roadmapElement.scrollLeft > 200) {
-        setShowScrollHelper(false);
-      } else {
-        setShowScrollHelper(true);
+      if (roadmapElement) {
+        console.log("roadmapElement.scrollLeft", roadmapElement.scrollLeft);
+        if (roadmapElement.scrollLeft > 200) {
+          setShowScrollHelper(false);
+        } else {
+          setShowScrollHelper(true);
+        }
       }
     };
 
-    roadmapElement.addEventListener("scroll", handleScroll);
+    if (roadmapElement) {
+      roadmapElement.addEventListener("scroll", handleScroll);
+    }
 
     return () => {
-      roadmapElement.removeEventListener("scroll", handleScroll);
+      if (roadmapElement) {
+        roadmapElement.removeEventListener("scroll", handleScroll);
+      }
     };
   }, []);
 
