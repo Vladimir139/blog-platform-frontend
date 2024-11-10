@@ -32,43 +32,10 @@ export const StyledHeader = styled(Header, {
 });
 
 export const WrapperIcon = styled("div", {
-  width: 25,
-  height: 25,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  borderRadius: 9999,
-  border: "1px solid #FFFFFF14",
-  position: "relative",
-
-  "&::before, &::after": {
-    content: "",
-    position: "absolute",
-    width: "12px",
-    height: "2px",
-    backgroundColor: "#FFFFFF",
-    transition: "transform 0.2s ease-in-out",
-  },
-
-  "&::before": {
-    transform: "rotate(0deg)",
-  },
-
-  "&::after": {
-    transform: "rotate(90deg)",
-  },
+  transform: "rotate(180deg)",
 
   '[data-state="open"] &': {
-    borderColor: "#306CFE",
-  },
-
-  '[data-state="open"] &::before': {
-    backgroundColor: "#306CFE",
-  },
-
-  '[data-state="open"] &::after': {
     transform: "rotate(0deg)",
-    backgroundColor: "#306CFE",
   },
 });
 

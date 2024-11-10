@@ -70,7 +70,7 @@ export const Navigation: FC = () => {
                 </S.WrapperArrowDown>
               </S.NavItemBtn>
             </S.NavList>
-            <S.LaunchAppLink href="/">Launch DApp</S.LaunchAppLink>
+            <S.LaunchAppLink href="https://t.me/CryptoryAI_bot">Launch DApp</S.LaunchAppLink>
           </>
         )}
       </S.Navigation>
@@ -120,7 +120,10 @@ export const Navigation: FC = () => {
               </S.NavItemBtn>
             </S.NavList>
           </S.TopWrapper>
-          <S.LaunchAppLink href="/" onClick={() => setIsOpenMobileNavigation(false)}>
+          <S.LaunchAppLink
+            href="https://t.me/CryptoryAI_bot"
+            onClick={() => setIsOpenMobileNavigation(false)}
+          >
             Launch DApp
           </S.LaunchAppLink>
         </S.InnerWrapMobile>

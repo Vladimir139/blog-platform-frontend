@@ -43,7 +43,11 @@ export const PreviewBlock: FC = () => (
       <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />
     </S.Description>
     <S.ButtonsList>
-      <Button theme="purple" stretch>
+      <Button
+        theme="purple"
+        stretch
+        onClick={() => window.open("https://t.me/CryptoryAI_bot", "_blank")}
+      >
         <div style={{ position: "relative", zIndex: 4 }}>Launch DApp</div>
       </Button>
       <Button theme="dark" stretch>

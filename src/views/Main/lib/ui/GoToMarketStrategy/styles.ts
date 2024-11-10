@@ -148,6 +148,11 @@ export const Description = styled("p", {
   },
 });
 
+export const WrapperButton = styled("div", {
+  width: "100%",
+  maxWidth: 210,
+});
+
 export const StyledImage = styled(Image, {
   position: "relative !important",
   zIndex: 2,

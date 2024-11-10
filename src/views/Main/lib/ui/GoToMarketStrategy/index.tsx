@@ -33,9 +33,16 @@ export const GoToMarketStrategy: FC = () => (
                 campaign designed to reach users worldwide and we are willing to share referral
                 income to people who promote this to their user-base.
               </S.Description>
-              <Button theme="purple" css={{ marginTop: 10 }}>
-                <div style={{ position: "relative", zIndex: 4 }}>Open dashboard</div>
-              </Button>
+              <S.WrapperButton>
+                <Button
+                  stretch
+                  theme="purple"
+                  css={{ marginTop: 10 }}
+                  onClick={() => window.open("https://t.me/CryptoryAI_bot", "_blank")}
+                >
+                  <div style={{ position: "relative", zIndex: 4 }}>Open dashboard</div>
+                </Button>
+              </S.WrapperButton>
             </S.InfoWrapper>
           </S.InnerBlockWrapper>
           <S.StyledImage src="/images/decor/rocketGoToMarket.png" alt="decor image" fill />

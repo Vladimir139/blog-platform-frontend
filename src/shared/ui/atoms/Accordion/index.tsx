@@ -1,5 +1,7 @@
 import React, { FC } from "react";
 
+import { UpArrowIcon } from "@/shared/lib/icons";
+
 import * as S from "./styles";
 import { CollapseItemProps, CollapseProps } from "./types";
 
@@ -13,7 +15,7 @@ export const AccordionItem: FC<CollapseItemProps> = ({ header, value, children }
       <S.StyledTrigger>
         {header}
         <S.WrapperIcon>
-          <span />
+          <UpArrowIcon />
         </S.WrapperIcon>
       </S.StyledTrigger>
     </S.StyledHeader>

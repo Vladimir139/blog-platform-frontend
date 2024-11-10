@@ -14,7 +14,11 @@ export const CoreValues: FC = () => (
         with our customers, partners, and employees.
       </S.Description>
       <S.WrapperButton>
-        <Button theme="purple" stretch>
+        <Button
+          theme="purple"
+          stretch
+          onClick={() => window.open("https://t.me/CryptoryAI_bot", "_blank")}
+        >
           <div style={{ position: "relative", zIndex: 4 }}>Open dashboard</div>
         </Button>
       </S.WrapperButton>

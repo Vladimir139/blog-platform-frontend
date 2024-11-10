@@ -7,4 +7,5 @@ export interface ButtonProps {
   disabled?: boolean;
   theme?: "purple" | "dark" | "outline";
   css?: CSS;
+  onClick?: () => void;
 }

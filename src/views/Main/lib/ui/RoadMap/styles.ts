@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { styled } from "@/shared/lib/styles";
+import { keyframes, styled } from "@/shared/lib/styles";
 
 export const Wrapper = styled("section", {
   marginTop: 110,
@@ -64,6 +64,54 @@ export const RoadmapLine = styled(Image, {
   width: "2674px !important",
   height: "501px !important",
   objectFit: "cover",
+});
+
+const moveSideToSide = keyframes({
+  "0%": { transform: "translateX(0px)" },
+  "50%": { transform: "translateX(-50px)" },
+  "100%": { transform: "translateX(0px)" },
+});
+
+export const ScrollHelper = styled("div", {
+  width: "85px",
+  height: "85px",
+
+  position: "absolute",
+
+  top: "50%",
+  right: "50px",
+
+  zIndex: 5,
+
+  backgroundColor: "#09093F",
+
+  border: "1px solid #645EA9",
+  borderRadius: 9999,
+
+  animation: `${moveSideToSide} 2s infinite`,
+
+  "& svg": {
+    position: "absolute",
+    left: "50%",
+    top: "50%",
+
+    transform: "translateY(-50%)",
+  },
+
+  transition: "opacity 0.5s ease-in-out",
+  opacity: 1,
+
+  "@media(max-width: 768px)": {
+    top: "45%",
+  },
+
+  variants: {
+    hidden: {
+      true: {
+        opacity: 0,
+      },
+    },
+  },
 });
 
 export const RoadmapLineMobile = styled(Image, {

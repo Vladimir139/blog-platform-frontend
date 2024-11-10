@@ -22,7 +22,7 @@ export const Footer: FC = () => (
             Cryptory is the first Multi Industry AI Website Builder powered entirely through
             Telegram.
           </S.Description>
-          <S.UseItOnTelegramLink href="/">
+          <S.UseItOnTelegramLink href="https://t.me/CryptoryAI_bot">
             <TelegramIcon />
             <S.InfoTgLinkWrap>
               <S.LinkText>USE IT ON</S.LinkText>
@@ -56,7 +56,7 @@ export const Footer: FC = () => (
         </S.Copyrite>
         <S.Copyrite>© 2024 All Rights Reserved By Cryptory</S.Copyrite>
         <S.SocialNetworksList>
-          <S.SocialNetwork href="/">
+          <S.SocialNetwork href="https://t.me/CryptoryAI_bot">
             <WhiteTelegramIcon />
           </S.SocialNetwork>
           <S.SocialNetwork href="/">
