@@ -76,6 +76,8 @@ export const ScrollHelper = styled("div", {
   width: "85px",
   height: "85px",
 
+  cursor: "pointer",
+
   position: "absolute",
 
   top: "50%",

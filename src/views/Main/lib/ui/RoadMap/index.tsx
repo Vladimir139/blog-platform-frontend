@@ -11,26 +11,25 @@ export const RoadMap: FC = () => {
 
   useEffect(() => {
     const roadmapElement = roadmapRef.current;
+    if (!roadmapElement) {
+      return () => {};
+    }
 
     const handleScroll = () => {
-      if (roadmapElement) {
-        console.log("roadmapElement.scrollLeft", roadmapElement.scrollLeft);
-        if (roadmapElement.scrollLeft > 200) {
-          setShowScrollHelper(false);
-        } else {
-          setShowScrollHelper(true);
-        }
+      if (roadmapElement.scrollLeft > 200) {
+        setShowScrollHelper(false);
+      } else {
+        setShowScrollHelper(true);
       }
     };
 
-    if (roadmapElement) {
-      roadmapElement.addEventListener("scroll", handleScroll);
-    }
+    roadmapElement.addEventListener("scroll", handleScroll);
+
+    // Проверяем позицию при первой загрузке
+    handleScroll();
 
     return () => {
-      if (roadmapElement) {
-        roadmapElement.removeEventListener("scroll", handleScroll);
-      }
+      roadmapElement.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -43,7 +42,14 @@ export const RoadMap: FC = () => {
       <S.DecorImageRubinGlowLeft src="/images/decor/rubinGlow.png" alt="decor image" fill />
       <S.DecorImageRubinGlowBottom src="/images/decor/rubinGlow.png" alt="decor image" fill />
       <S.WrapperRoadmap ref={roadmapRef}>
-        <S.ScrollHelper hidden={!showScrollHelper}>
+        <S.ScrollHelper
+          hidden={!showScrollHelper}
+          onClick={() => {
+            if (roadmapRef.current) {
+              roadmapRef.current.scrollBy({ left: 400, behavior: "smooth" });
+            }
+          }}
+        >
           <RightArrowIcon />
         </S.ScrollHelper>
         <S.RoadmapLine src="/images/roadmap/roadmapLine2.png" alt="roadmap line" fill />
