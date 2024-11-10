@@ -27,7 +27,6 @@ export const RoadMap: FC = () => (
         </S.Description>
       </S.PhaseBlock>
       <S.PhaseBlock blockNumber={2}>
-        <S.DecorImageBluePlanet src="/images/decor/bluePlanet.png" alt="decor image" fill />
         <S.PhaseBlueTitle>PHASE 2</S.PhaseBlueTitle>
         <S.PhaseTitle>Building Core Functionality and Securing Funding</S.PhaseTitle>
         <S.Description>
@@ -38,7 +37,6 @@ export const RoadMap: FC = () => (
         </S.Description>
       </S.PhaseBlock>
       <S.PhaseBlock blockNumber={3}>
-        <S.DecorImagePinkNlo src="/images/decor/pinkNlo.png" alt="decor image" fill />
         <S.PhaseBlueTitle>PHASE 3</S.PhaseBlueTitle>
         <S.PhaseTitle>Launch and Rapid Expansion</S.PhaseTitle>
         <S.Description>

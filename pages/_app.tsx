@@ -7,6 +7,7 @@ import { App } from "@/app";
 
 const MyApp: FC<AppProps> = ({ Component, pageProps }) => (
   <App>
+    {/* @ts-ignore */}
     <Component {...pageProps} />
   </App>
 );

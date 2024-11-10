@@ -4,6 +4,7 @@ import { getCssText } from "@/shared/lib/styles";
 
 const Document = () => (
   <Html>
+    {/* @ts-ignore */}
     <Head>
       {/* eslint-disable-next-line */}
       <link rel="stylesheet" href="/assets/fonts.css" />
@@ -12,6 +13,7 @@ const Document = () => (
     </Head>
     <body>
       <Main />
+      {/* @ts-ignore */}
       <NextScript />
     </body>
   </Html>

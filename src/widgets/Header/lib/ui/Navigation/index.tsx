@@ -70,7 +70,7 @@ export const Navigation: FC = () => {
                 </S.WrapperArrowDown>
               </S.NavItemBtn>
             </S.NavList>
-            <S.LaunchAppLink href="/">Launch App</S.LaunchAppLink>
+            <S.LaunchAppLink href="/">Launch DApp</S.LaunchAppLink>
           </>
         )}
       </S.Navigation>
@@ -121,7 +121,7 @@ export const Navigation: FC = () => {
             </S.NavList>
           </S.TopWrapper>
           <S.LaunchAppLink href="/" onClick={() => setIsOpenMobileNavigation(false)}>
-            Launch App
+            Launch DApp
           </S.LaunchAppLink>
         </S.InnerWrapMobile>
       </S.WrapperMobile>

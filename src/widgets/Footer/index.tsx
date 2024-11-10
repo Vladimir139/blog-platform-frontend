@@ -52,8 +52,9 @@ export const Footer: FC = () => (
       </S.TopWrapper>
       <S.BottomWrapper>
         <S.Copyrite>
-          © 2023 All Rights Reserved By <span>Cryptory</span>
+          Cryptory LLC, 131 Continental Drive Suite 305, <br /> Newark, New Castle, Delaware 19713
         </S.Copyrite>
+        <S.Copyrite>© 2024 All Rights Reserved By Cryptory</S.Copyrite>
         <S.SocialNetworksList>
           <S.SocialNetwork href="/">
             <WhiteTelegramIcon />

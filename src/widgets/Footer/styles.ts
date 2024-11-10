@@ -231,10 +231,6 @@ export const Copyrite = styled("p", {
 
   color: "#FFFFFF99",
 
-  "& span": {
-    color: "#7B7BFF",
-  },
-
   "@media(max-width: 500px)": {
     textAlign: "center",
   },

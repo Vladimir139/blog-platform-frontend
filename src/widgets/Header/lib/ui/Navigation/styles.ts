@@ -25,6 +25,8 @@ export const NavItem = styled("a", {
 
   padding: "26px 12px 26px",
 
+  color: "#FFFFFF",
+
   textDecoration: "none",
 
   position: "relative",
@@ -165,8 +167,8 @@ export const Navigation = styled("nav", {
 
 export const LaunchAppLink = styled(Link, {
   fontSize: 15,
-  lineHeight: "20px",
-  fontWeight: 400,
+  lineHeight: "23px",
+  fontWeight: 700,
 
   textAlign: "center",
   textDecoration: "none",
@@ -175,8 +177,23 @@ export const LaunchAppLink = styled(Link, {
   padding: "16px 21px",
   maxWidth: 200,
 
-  border: "1px solid #FFFFFF26",
   borderRadius: "12px",
+
+  position: "relative",
+
+  "&::before": {
+    content: "",
+    position: "absolute",
+    inset: 0,
+
+    borderRadius: "420px",
+    padding: "1px",
+    background: "linear-gradient(97.18deg, #8B5DFA 43.41%, #7995F9 101.32%)",
+
+    "-webkit-mask": "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
+    "-webkit-mask-composite": "xor",
+    maskComposite: "exclude",
+  },
 
   "@media (max-width: 940px)": {
     width: "100%",

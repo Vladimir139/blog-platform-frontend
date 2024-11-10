@@ -20,10 +20,6 @@ export const MainUseCases: FC = () => (
         />
       ))}
     </S.CasesList>
-    <S.DecorImageCasesNloWithStarsAndGlow
-      src="/images/mainUseCases/casesNloWithStarsAndGlow.png"
-      alt="decor image"
-      fill
-    />
+    <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />
   </S.Wrapper>
 );

@@ -1,3 +1,4 @@
+import { CSS } from "@stitches/react";
 import { ReactNode } from "react";
 
 export interface ButtonProps {
@@ -5,4 +6,5 @@ export interface ButtonProps {
   stretch?: boolean;
   disabled?: boolean;
   theme?: "purple" | "dark" | "outline";
+  css?: CSS;
 }

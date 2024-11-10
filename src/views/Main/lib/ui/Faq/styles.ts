@@ -21,6 +21,20 @@ export const DecorImageRubinGlow = styled(Image, {
   height: "600px !important",
 });
 
+export const DecorImageBlueLongGlow = styled(Image, {
+  top: "-75% !important",
+  left: "auto !important",
+  right: "-40% !important",
+  bottom: "auto !important",
+
+  zIndex: -5,
+
+  transform: "rotate(50deg)",
+
+  width: "1728px !important",
+  height: "1240px !important",
+});
+
 export const WrapperAccordion = styled("div", {
   maxWidth: 1027,
 

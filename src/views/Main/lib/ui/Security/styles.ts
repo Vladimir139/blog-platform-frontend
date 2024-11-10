@@ -3,7 +3,7 @@ import Image from "next/image";
 import { styled } from "@/shared/lib/styles";
 
 export const Wrapper = styled("section", {
-  margin: "75px",
+  margin: "40px",
 
   position: "relative",
 
@@ -47,7 +47,7 @@ export const SecuritiesLogoList = styled("div", {
   width: "100%",
   maxWidth: 952,
 
-  margin: "79px auto 131px",
+  margin: "46px auto 75px",
 
   "@media(max-width: 1004px)": {
     justifyContent: "center",

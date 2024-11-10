@@ -93,34 +93,34 @@ export const mainUseCases: CaseCardProps[] = [
       },
     },
   },
-  {
-    title: "ACCESS TO UTILITIES’ PREMIUM FEATURES AT CHEAPER RATE",
-    description:
-      "Cryptory, through negotiation with our partner projects, offers access to some premium features of our partner projects.",
-    image: "/images/mainUseCases/Access.png",
-    cssImage: {
-      width: "466px !important",
-      height: "307px !important",
-
-      bottom: "-13% !important",
-      right: "-20% !important",
-
-      "@media(max-width: 545px)": {
-        width: "341px !important",
-        height: "225px !important",
-
-        bottom: "-7% !important",
-        right: "-5% !important",
-      },
-
-      "@media(max-width: 380px)": {
-        width: "286px !important",
-        height: "189px !important",
-
-        bottom: "-5% !important",
-      },
-    },
-  },
+  // {
+  //   title: "ACCESS TO UTILITIES’ PREMIUM FEATURES AT CHEAPER RATE",
+  //   description:
+  //     "Cryptory, through negotiation with our partner projects, offers access to some premium features of our partner projects.",
+  //   image: "/images/mainUseCases/Access.png",
+  //   cssImage: {
+  //     width: "466px !important",
+  //     height: "307px !important",
+  //
+  //     bottom: "-13% !important",
+  //     right: "-20% !important",
+  //
+  //     "@media(max-width: 545px)": {
+  //       width: "341px !important",
+  //       height: "225px !important",
+  //
+  //       bottom: "-7% !important",
+  //       right: "-5% !important",
+  //     },
+  //
+  //     "@media(max-width: 380px)": {
+  //       width: "286px !important",
+  //       height: "189px !important",
+  //
+  //       bottom: "-5% !important",
+  //     },
+  //   },
+  // },
   {
     title: "CRYPTORY WEB APPS",
     description: "Access all the Web3 Utilities from the web page",

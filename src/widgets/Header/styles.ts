@@ -7,16 +7,16 @@ export const Header = styled("header", {
   alignItems: "center",
   justifyContent: "center",
 
-  padding: "23px 0 0",
-
   borderBottom: "1px solid #FFFFFF1A",
 
   "@media(max-width: 940px)": {
-    padding: "23px 0 23px",
+    padding: "11px 0 11px",
+
+    borderBottom: "none",
   },
 });
 
-export const InnerWrapperHeader = styled("header", {
+export const InnerWrapperHeader = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
@@ -32,8 +32,6 @@ export const Logo = styled(Image, {
 
   width: "90px !important",
   height: "49px !important",
-
-  marginBottom: 22,
 
   "@media(max-width: 940px)": {
     marginBottom: 0,

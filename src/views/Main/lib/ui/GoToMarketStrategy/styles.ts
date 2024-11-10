@@ -1,10 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { styled } from "@/shared/lib/styles";
 
 export const Wrapper = styled("section", {
-  marginTop: 165,
+  marginTop: 68,
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
@@ -58,18 +57,22 @@ export const WrapperBlock = styled("div", {
   padding: "0 20px",
 });
 
-export const Block = styled("div", {
+export const WrapperCoreValues = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "space-between",
   width: "100%",
+});
 
+export const Block = styled("div", {
   position: "relative",
+  width: "100%",
+  overflow: "hidden",
 
-  padding: "0px 46px 39px",
+  padding: "0px 46px 0px 0px",
   margin: "0 20px",
 
-  background: "linear-gradient(180deg, #010123 0%, #07075E 100%)",
+  background: "linear-gradient(142.99deg, #010123 16.78%, #07075E 134.99%)",
 
   borderRadius: 19,
 
@@ -95,7 +98,7 @@ export const InnerBlockWrapper = styled("div", {
   position: "relative",
   overflow: "hidden",
 
-  paddingTop: 48,
+  paddingTop: 36,
 
   "@media(max-width: 830px)": {
     overflow: "visible",
@@ -114,24 +117,23 @@ export const InfoWrapper = styled("div", {
   gap: 23,
 
   maxWidth: 400,
+  marginLeft: 46,
+  marginBottom: 60,
 
   "@media(max-width: 830px)": {
     maxWidth: "100%",
   },
 });
 
-export const LinkGoToMarket = styled(Link, {
-  background: "linear-gradient(180deg, #080868 0%, #2D37A4 100%)",
+export const TitleCoreValues = styled("p", {
+  fontSize: 24,
+  fontWeight: 400,
+  lineHeight: "26px",
 
-  padding: "6px 25px 8px 21px",
-
-  textDecoration: "none",
-
-  borderRadius: 100,
-
-  "@media(max-width: 830px)": {
-    margin: "0 auto",
-  },
+  background: "linear-gradient(93.29deg, #FFFFFF 0.6%, #7217DA 127.89%)",
+  backgroundClip: "text",
+  "-webkit-background-clip": "text",
+  "-webkit-text-fill-color": "transparent",
 });
 
 export const Description = styled("p", {
@@ -147,21 +149,11 @@ export const Description = styled("p", {
 });
 
 export const StyledImage = styled(Image, {
-  right: "47px !important",
-  top: "-35px !important",
-  left: "auto !important",
-  bottom: "auto !important",
+  position: "relative !important",
+  zIndex: 2,
 
-  width: "300px !important",
-  height: "344px !important",
-
-  "@media(max-width: 830px)": {
-    position: "relative !important",
-    right: "auto !important",
-    top: "auto !important",
-
-    margin: "0 auto",
-  },
+  width: "226px !important",
+  height: "259px !important",
 
   "@media(max-width: 420px)": {
     width: "217px !important",
@@ -169,22 +161,31 @@ export const StyledImage = styled(Image, {
   },
 });
 
-export const Initiatives = styled("div", {
+export const StyledPlanet = styled(Image, {
+  top: "auto !important",
+  left: "auto !important",
+  right: "-150px !important",
+  bottom: "-285px !important",
+
+  zIndex: 1,
+  opacity: 0.5,
+
+  width: "751px !important",
+  height: "751px !important",
+});
+
+export const InitiativesBlock = styled("div", {
   display: "grid",
-  gridTemplateColumns: "1fr minmax(200px, 480px) minmax(200px, 480px) 1fr", // Четыре колонки
-  padding: "20px 0",
+  gridTemplateColumns: "1fr 1fr",
+  justifyContent: "space-between",
+  marginLeft: 46,
+  marginBottom: 39,
+  gap: "52px 20px",
 
-  marginTop: 111,
+  position: "relative",
+  zIndex: 2,
 
-  width: "100%",
-
-  "@media(max-width: 580px)": {
-    gridTemplateColumns: "1fr minmax(200px, 480px) 1fr",
-
-    "& div": {
-      justifyContent: "center",
-    },
-  },
+  "@media(max-width: 580px)": {},
 });
 
 export const DescriptionInitiatives = styled(Description, {
@@ -196,7 +197,7 @@ export const DescriptionInitiatives = styled(Description, {
 
   maxWidth: 960,
 
-  margin: "0 40px",
+  margin: "45px 40px 75px",
 
   "@media(max-width: 580px)": {
     fontSize: 16,

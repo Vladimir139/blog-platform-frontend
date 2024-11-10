@@ -80,30 +80,6 @@ export const RoadmapLineMobile = styled(Image, {
   },
 });
 
-export const DecorImageBluePlanet = styled(Image, {
-  top: "-50px !important",
-  left: "-200px !important",
-  right: "auto !important",
-  bottom: "auto !important",
-
-  zIndex: -5,
-
-  width: "213px !important",
-  height: "232px !important",
-});
-
-export const DecorImagePinkNlo = styled(Image, {
-  top: "100px !important",
-  left: "auto !important",
-  right: "-140px !important",
-  bottom: "auto !important",
-
-  zIndex: -5,
-
-  width: "153px !important",
-  height: "156px !important",
-});
-
 export const PhaseBlock = styled("div", {
   position: "absolute",
 
@@ -194,7 +170,7 @@ export const PhaseBlueTitle = styled("p", {
   fontWeight: 400,
   lineHeight: "22px",
 
-  color: "#306CFEF5",
+  color: "#8D5DFA",
 });
 
 export const PhaseTitle = styled("p", {

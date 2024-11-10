@@ -7,6 +7,7 @@ import * as S from "./styles";
 export const Faq: FC = () => (
   <S.Wrapper>
     <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />
+    <S.DecorImageBlueLongGlow src="/images/roadmap/blueLongGlow.png" alt="decor image" fill />
     <Title
       subTitle={`Got questions about Cryptory? We've got answers. Dive into our FAQ section\nto learn more.`}
     >

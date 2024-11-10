@@ -4,13 +4,19 @@ export const Burger = styled("span", {
   display: "flex",
   alignItems: "center",
   position: "relative",
-  backgroundColor: "inherit",
+  background: "linear-gradient(0deg, #6C52EE, #6C52EE)",
+  // radial-gradient(111.76% 447.96% at 0% -100%, #619BFF 20%, rgba(205, 219, 248, 0) 51%),
+  // linear-gradient(235.57deg, #9E61FF 0%, rgba(142, 97, 255, 0) 34%);
+
   transition: "$default",
   border: "none",
+  borderRadius: 8,
   outline: "none",
   cursor: "pointer",
-  width: 22,
-  height: 22,
+  width: 44,
+  height: 44,
+
+  padding: "13px 12px 13px 11px",
 
   zIndex: 15,
 
@@ -18,12 +24,12 @@ export const Burger = styled("span", {
     content: "",
     backgroundColor: "#FFFFFF",
     position: "absolute",
-    width: "100%",
+    width: "21px",
     height: "2px",
-    top: "0",
+    top: "13px",
     left: "0",
     borderRadius: "9999px",
-    transform: "rotate(0deg)",
+    transform: "rotate(0deg) translateX(50%)",
     transition: "$default",
   },
 
@@ -31,12 +37,13 @@ export const Burger = styled("span", {
     content: "",
     backgroundColor: "#FFFFFF",
     position: "absolute",
-    width: "100%",
+    width: "21px",
     height: "2px",
-    bottom: "0",
+    bottom: "13px",
     left: "0",
+    right: "0",
     borderRadius: "9999px",
-    transform: "rotate(0deg)",
+    transform: "rotate(0deg) translateX(50%)",
     transition: "$default",
   },
 
@@ -44,16 +51,20 @@ export const Burger = styled("span", {
     isActive: {
       true: {
         "&::before": {
-          width: "120%",
-          transform: "rotate(45deg)",
-          top: "45%",
+          transform: "rotate(45deg) translateX(50%)",
+          top: "13px",
+          left: "2px",
           height: "2px",
+
+          width: 23,
         },
         "&::after": {
-          width: "120%",
-          top: "45%",
-          transform: "rotate(-45deg)",
+          bottom: "13px",
+          left: "2px",
+          transform: "rotate(-45deg) translateX(50%)",
           height: "2px",
+
+          width: 23,
         },
       },
     },
@@ -62,11 +73,13 @@ export const Burger = styled("span", {
 
 export const MiddleLine = styled("span", {
   display: "block",
-  width: "100%",
+  width: "13px",
   height: "2px",
   backgroundColor: "#FFFFFF",
   borderRadius: "9999px",
   transition: "$default",
+
+  marginLeft: "auto",
 
   variants: {
     isActive: {

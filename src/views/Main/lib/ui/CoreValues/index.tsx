@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { RightArrow } from "@/shared/lib/icons";
+import { Button } from "@/shared/ui/atoms";
 
 import * as S from "./styles";
 
@@ -13,9 +13,11 @@ export const CoreValues: FC = () => (
         These values shape the way we conduct ourselves as a company and inform our interactions
         with our customers, partners, and employees.
       </S.Description>
-      <S.LinkLearnMore href="/">
-        Learn more <RightArrow />
-      </S.LinkLearnMore>
+      <S.WrapperButton>
+        <Button theme="purple" stretch>
+          <div style={{ position: "relative", zIndex: 4 }}>Open dashboard</div>
+        </Button>
+      </S.WrapperButton>
     </S.WrapperInfo>
     <S.DecorImage src="/images/decor/spiralDecoration.png" alt="decor image" fill />
     <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />

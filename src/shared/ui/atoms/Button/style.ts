@@ -86,6 +86,13 @@ export const Button = styled("button", {
           "-webkit-mask-composite": "xor",
           maskComposite: "exclude",
         },
+
+        "& span": {
+          color: "transparent",
+          background: "linear-gradient(90deg, #787CFF 0%, #D4AEFF 100%)",
+          "-webkit-background-clip": "text",
+          "background-clip": "text",
+        },
       },
       outline: {},
     },

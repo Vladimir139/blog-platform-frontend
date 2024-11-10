@@ -6,7 +6,6 @@ import {
   Faq,
   GoToMarketStrategy,
   MainUseCases,
-  OurTeam,
   Partners,
   PreviewBlock,
   RoadMap,
@@ -14,6 +13,8 @@ import {
   Statistics,
   Tokenomics,
 } from "@/views/Main/lib/ui";
+
+import * as S from "./styles";
 
 export const MainPage: FC = () => (
   <>
@@ -25,10 +26,12 @@ export const MainPage: FC = () => (
       <MainUseCases />
     </Container>
     <GoToMarketStrategy />
+    <S.Divider />
     <Security />
+    <S.Divider />
     <Tokenomics />
     <RoadMap />
-    <OurTeam />
+    {/* <OurTeam /> */}
     <Faq />
   </>
 );

@@ -14,17 +14,17 @@ export const Security: FC = () => (
     <S.SecuritiesLogoList>
       <S.SecurityLogo
         security="assureDefi"
-        src="/images/security/assureDefi.png"
+        src="/images/security/assureDefiDark2.png"
         alt="security logo"
         fill
       />
       <S.SecurityLogo
         security="blockSafu"
-        src="/images/security/blockSafu.png"
+        src="/images/security/blockSafuDark2.png"
         alt="security logo"
         fill
       />
-      <S.SecurityLogo security="sp" src="/images/security/sp.png" alt="security logo" fill />
+      <S.SecurityLogo security="sp" src="/images/security/spDark2.png" alt="security logo" fill />
     </S.SecuritiesLogoList>
   </S.Wrapper>
 );

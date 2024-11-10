@@ -30,7 +30,7 @@ export const DecorImageCasesText = styled(Image, {
   },
 });
 
-export const DecorImageCasesNloWithStarsAndGlow = styled(Image, {
+export const DecorImageRubinGlow = styled(Image, {
   top: "auto !important",
   left: "auto !important",
   right: "-33% !important",
@@ -38,13 +38,10 @@ export const DecorImageCasesNloWithStarsAndGlow = styled(Image, {
 
   zIndex: -5,
 
-  width: "1155px !important",
-  height: "522px !important",
+  width: "732px !important",
+  height: "600px !important",
 
   "@media(max-width: 900px)": {
-    width: "750px !important",
-    height: "349px !important",
-
     bottom: "-10% !important",
   },
 

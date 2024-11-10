@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import { styled } from "@/shared/lib/styles";
 
@@ -71,11 +70,15 @@ export const WrapperInfo = styled("div", {
 });
 
 export const Title = styled("h3", {
-  fontSize: 30,
-  lineHeight: "26px",
-  fontWeight: 700,
+  fontSize: 48,
+  lineHeight: "75px",
+  fontWeight: 400,
 
-  marginBottom: 26,
+  textAlign: "center",
+  background: "linear-gradient(93.29deg, #FFFFFF 0.6%, #7217DA 127.89%)",
+  color: "transparent",
+  "-webkit-background-clip": "text",
+  "background-clip": "text",
 
   "@media(max-width: 900px)": {
     textAlign: "center",
@@ -95,10 +98,7 @@ export const Description = styled("p", {
   color: "#FFFFFF99",
 
   marginBottom: 32,
-
-  "@media(max-width: 900px)": {
-    textAlign: "center",
-  },
+  textAlign: "center",
 
   "@media(max-width: 550px)": {
     fontSize: 14,
@@ -106,39 +106,11 @@ export const Description = styled("p", {
   },
 });
 
-export const LinkLearnMore = styled(Link, {
+export const WrapperButton = styled("div", {
   width: "100%",
+  maxWidth: 210,
 
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-
-  textDecoration: "none",
-  padding: 16,
-
-  background: "inherit",
-
-  position: "relative",
-
-  "&::before": {
-    content: "",
-    position: "absolute",
-    inset: 0,
-
-    borderRadius: "50px",
-    padding: "1px",
-    background: "linear-gradient(88.88deg, #6A6AA9 25.29%, #7154F0 93.65%)",
-
-    "-webkit-mask": "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
-    "-webkit-mask-composite": "xor",
-    maskComposite: "exclude",
-  },
-
-  "@media(max-width: 900px)": {
-    maxWidth: 300,
-
-    margin: "0 auto",
-  },
+  margin: "0 auto",
 });
 
 export const DecorImage = styled(Image, {
