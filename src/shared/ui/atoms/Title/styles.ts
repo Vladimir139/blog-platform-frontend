@@ -2,7 +2,7 @@ import { styled } from "@/shared/lib/styles";
 
 export const StyledTitle = styled("h3", {
   fontSize: 48,
-  lineHeight: "75px",
+  lineHeight: "50px",
   fontWeight: 400,
 
   padding: "0 10px",
@@ -16,7 +16,10 @@ export const StyledTitle = styled("h3", {
 
   "@media(max-width: 530px)": {
     fontSize: 38,
-    lineHeight: "65px",
+  },
+
+  "@media(max-width: 430px)": {
+    fontSize: 24,
   },
 });
 

@@ -6,6 +6,10 @@ export const Wrapper = styled("section", {
   position: "relative",
 
   marginTop: 88,
+
+  "@media (max-width: 600px)": {
+    marginTop: 25,
+  },
 });
 
 export const WrapperTokenInfo = styled("div", {
@@ -31,6 +35,13 @@ export const InnerWrapperTokenomics = styled("div", {
   gap: 10,
 
   marginTop: 60,
+
+  "@media (max-width: 1050px)": {
+    alignItems: "center",
+    flexDirection: "column",
+
+    gap: 50,
+  },
 });
 
 export const Divider = styled("div", {
@@ -45,6 +56,21 @@ export const StyledTokenomicsPhoto = styled(Image, {
 
   width: "682px !important",
   height: "365px !important",
+
+  "@media(max-width: 660px)": {
+    width: "502px !important",
+    height: "268px !important",
+  },
+
+  "@media(max-width: 480px)": {
+    width: "365px !important",
+    height: "260px !important",
+  },
+
+  "@media(max-width: 360px)": {
+    width: "310px !important",
+    height: "220px !important",
+  },
 });
 
 export const Percentages = styled("div", {
@@ -55,10 +81,21 @@ export const Percentages = styled("div", {
   gap: 5,
 
   marginTop: 10,
+
+  "@media(max-width: 1074px)": {
+    justifyContent: "center",
+    flexWrap: "wrap",
+
+    gap: 20,
+  },
 });
 
 export const WrapperPercentages = styled("div", {
   marginTop: 152,
+
+  "@media(max-width: 600px)": {
+    marginTop: 80,
+  },
 });
 
 export const DecorImageRubinGlow = styled(Image, {
@@ -90,6 +127,28 @@ export const VeriticalDivider = styled("div", {
   width: 1,
 
   backgroundColor: "#64669C",
+
+  "@media(max-width: 1074px)": {
+    display: "none",
+  },
+
+  variants: {
+    noHidden: {
+      true: {
+        "@media(max-width: 1074px)": {
+          display: "block",
+        },
+
+        "@media(max-width: 690px)": {
+          height: 315,
+        },
+
+        "@media(max-width: 640px)": {
+          display: "none",
+        },
+      },
+    },
+  },
 });
 
 export const TokenInfoBlockTokenInfo = styled("div", {
@@ -112,6 +171,16 @@ export const TokenInfoBlock = styled("div", {
   gap: 15,
 
   marginTop: 30,
+
+  "@media(max-width: 1074px)": {
+    width: "45%",
+  },
+
+  "@media(max-width: 640px)": {
+    width: "auto",
+    gap: 0,
+    marginTop: 0,
+  },
 });
 
 export const BlockTitleTokenInfo = styled("p", {
@@ -136,6 +205,10 @@ export const BlockTitle = styled("p", {
   color: "#CACFFF",
 
   textAlign: "center",
+
+  "@media(max-width: 600px)": {
+    fontSize: 20,
+  },
 });
 
 export const BlockValue = styled("p", {
@@ -147,5 +220,10 @@ export const BlockValue = styled("p", {
 
   "& span": {
     color: "#6C52EE",
+  },
+
+  "@media(max-width: 600px)": {
+    fontSize: 14,
+    lineHeight: "20px",
   },
 });

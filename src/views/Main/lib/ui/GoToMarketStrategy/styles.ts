@@ -11,6 +11,10 @@ export const Wrapper = styled("section", {
   width: "100%",
 
   position: "relative",
+
+  "@media(max-width: 420px)": {
+    marginTop: 33,
+  },
 });
 
 export const DecorImageBackBlur = styled(Image, {
@@ -30,7 +34,8 @@ export const DecorImageBackBlur = styled(Image, {
   },
 
   "@media(max-width: 420px)": {
-    display: "none",
+    top: "-200px !important",
+    left: "-300px !important",
   },
 });
 
@@ -44,6 +49,10 @@ export const SubTitle = styled("p", {
   color: "#9090CE",
 
   textAlign: "center",
+
+  "@media(max-width: 500px)": {
+    margin: "8px 20px 23px",
+  },
 });
 
 export const WrapperBlock = styled("div", {
@@ -55,6 +64,10 @@ export const WrapperBlock = styled("div", {
   justifyContent: "center",
 
   padding: "0 20px",
+
+  "@media(max-width: 500px)": {
+    padding: "0 14px 0 11px",
+  },
 });
 
 export const WrapperCoreValues = styled("div", {
@@ -84,8 +97,8 @@ export const Block = styled("div", {
     justifyContent: "center",
   },
 
-  "@media(max-width: 420px)": {
-    padding: "0px 30px 30px",
+  "@media(max-width: 500px)": {
+    padding: "0px 0px 0px 0px",
   },
 });
 
@@ -122,6 +135,10 @@ export const InfoWrapper = styled("div", {
 
   "@media(max-width: 830px)": {
     maxWidth: "100%",
+
+    marginLeft: 16,
+    marginRight: 16,
+    marginBottom: 42,
   },
 });
 
@@ -142,7 +159,7 @@ export const Description = styled("p", {
   fontWeight: 400,
   lineHeight: "23px",
 
-  "@media(max-width: 420px)": {
+  "@media(max-width: 600px)": {
     fontSize: 16,
     lineHeight: "20px",
   },
@@ -160,10 +177,14 @@ export const StyledImage = styled(Image, {
   width: "226px !important",
   height: "259px !important",
 
-  "@media(max-width: 420px)": {
-    width: "217px !important",
-    height: "249px !important",
+  "@media(max-width: 830px)": {
+    display: "none",
   },
+
+  // "@media(max-width: 420px)": {
+  //   width: "217px !important",
+  //   height: "249px !important",
+  // },
 });
 
 export const StyledPlanet = styled(Image, {
@@ -177,6 +198,11 @@ export const StyledPlanet = styled(Image, {
 
   width: "751px !important",
   height: "751px !important",
+
+  "@media(max-width: 600px)": {
+    right: "-450px !important",
+    bottom: "-300px !important",
+  },
 });
 
 export const InitiativesBlock = styled("div", {
@@ -190,7 +216,16 @@ export const InitiativesBlock = styled("div", {
   position: "relative",
   zIndex: 2,
 
-  "@media(max-width: 580px)": {},
+  "@media(max-width: 800px)": {
+    gap: "30px 20px",
+
+    marginLeft: 16,
+    marginBottom: 34,
+  },
+
+  "@media(max-width: 500px)": {
+    marginLeft: 0,
+  },
 });
 
 export const DescriptionInitiatives = styled(Description, {
@@ -202,11 +237,16 @@ export const DescriptionInitiatives = styled(Description, {
 
   maxWidth: 960,
 
-  margin: "45px 40px 75px",
+  margin: "45px 40px 75px 20px",
 
   "@media(max-width: 580px)": {
+    margin: "29px 7px 41px 10px",
+
     fontSize: 16,
-    lineHeight: "20px",
+  },
+
+  "@media(max-width: 500px)": {
+    fontSize: 14,
   },
 });
 
@@ -220,4 +260,13 @@ export const InitiativeText = styled(Description, {
   display: "flex",
   alignItems: "center",
   gap: 20,
+
+  "@media(max-width: 800px)": {
+    fontSize: 16,
+    lineHeight: "20px",
+  },
+
+  "@media(max-width: 600px)": {
+    fontSize: 14,
+  },
 });

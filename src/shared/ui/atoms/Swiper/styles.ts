@@ -4,8 +4,6 @@ export const Root = styled("section", {
   position: "relative",
 
   width: "100%",
-  // maxWidth: 372,
-  margin: "0 auto",
 
   display: "flex",
   alignItems: "center",
@@ -19,22 +17,9 @@ export const Root = styled("section", {
       alignItems: "center",
       justifyContent: "center",
 
-      maxWidth: 465,
-      // height: 400,
-      // height: 400,
-      // backgroundColor: "$grey",
-
-      "@media(max-width: 1000px)": {
-        maxWidth: 365,
-      },
-
-      "@media(max-width: 560px)": {
-        maxWidth: 305,
-      },
-
-      "@media(max-width: 400px)": {
-        maxWidth: 250,
-      },
+      maxWidth: 300,
+      height: "100%",
+      maxHeight: 405,
 
       "& img": {
         display: "flex",

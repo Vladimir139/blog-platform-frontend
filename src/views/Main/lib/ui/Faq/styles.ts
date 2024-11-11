@@ -7,6 +7,11 @@ export const Wrapper = styled("section", {
   padding: "0 20px",
 
   position: "relative",
+
+  "@media(max-width: 500px)": {
+    marginTop: 57,
+    padding: "0 10px",
+  },
 });
 
 export const DecorImageRubinGlow = styled(Image, {
@@ -19,6 +24,10 @@ export const DecorImageRubinGlow = styled(Image, {
 
   width: "732px !important",
   height: "600px !important",
+
+  "@media(max-width: 650px)": {
+    display: "none",
+  },
 });
 
 export const DecorImageBlueLongGlow = styled(Image, {
@@ -33,10 +42,18 @@ export const DecorImageBlueLongGlow = styled(Image, {
 
   width: "1728px !important",
   height: "1240px !important",
+
+  "@media(max-width: 650px)": {
+    display: "none",
+  },
 });
 
 export const WrapperAccordion = styled("div", {
   maxWidth: 1027,
 
   margin: "43px auto 99px",
+
+  "@media(max-width: 500px)": {
+    margin: "27px auto 0px",
+  },
 });

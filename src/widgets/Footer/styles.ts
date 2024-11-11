@@ -24,6 +24,15 @@ export const Footer = styled("footer", {
 
     background: "linear-gradient(90deg, #0D0D59 0%, #306CFE 53.34%, #0D0D59 100%)",
   },
+
+  "@media(max-width: 500px)": {
+    "&::before": {
+      width: 0,
+      height: 0,
+
+      background: "inherit",
+    },
+  },
 });
 
 export const InnerFooterWrapper = styled("div", {
@@ -46,6 +55,10 @@ export const TopWrapper = styled("div", {
     flexDirection: "column",
 
     gap: 20,
+  },
+
+  "@media(max-width: 600px)": {
+    gap: 0,
   },
 });
 
@@ -76,6 +89,11 @@ export const Description = styled("p", {
   "@media(max-width: 788px)": {
     marginLeft: 0,
   },
+
+  "@media(max-width: 600px)": {
+    marginTop: 19,
+    marginBottom: 14,
+  },
 });
 
 export const RightWrapper = styled("div", {
@@ -89,6 +107,10 @@ export const RightWrapper = styled("div", {
   maxWidth: 366,
 
   marginTop: 60,
+
+  "@media(max-width: 600px)": {
+    marginTop: 38,
+  },
 });
 
 export const BottomWrapper = styled("div", {
@@ -106,6 +128,13 @@ export const BottomWrapper = styled("div", {
 
   "@media(max-width: 500px)": {
     flexDirection: "column",
+    borderTop: "none",
+    marginTop: 20,
+
+    alignItems: "start",
+    padding: "0px",
+
+    gap: 29,
   },
 });
 
@@ -180,7 +209,7 @@ export const TitleLinks = styled("p", {
   fontFamily: "$Inter",
 });
 
-export const ListLinks = styled("p", {
+export const ListLinks = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "start",
@@ -189,12 +218,16 @@ export const ListLinks = styled("p", {
   gap: 10,
 });
 
-export const SocialNetworksList = styled("p", {
+export const SocialNetworksList = styled("div", {
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
 
   gap: 15,
+
+  "@media(max-width: 600px)": {
+    margin: "0 auto 33px",
+  },
 });
 
 export const SocialNetwork = styled(Link, {
@@ -231,7 +264,13 @@ export const Copyrite = styled("p", {
 
   color: "#FFFFFF99",
 
-  "@media(max-width: 500px)": {
-    textAlign: "center",
+  variants: {
+    mobileHidden: {
+      true: {
+        "@media(max-width: 600px)": {
+          display: "none",
+        },
+      },
+    },
   },
 });

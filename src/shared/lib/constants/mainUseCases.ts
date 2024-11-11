@@ -10,9 +10,11 @@ export const mainUseCases: CaseCardProps[] = [
       width: "421px !important",
       height: "343px !important",
 
-      "@media(max-width: 460px)": {
-        width: "331px !important",
-        height: "270px !important",
+      "@media(max-width: 545px)": {
+        width: "257px !important",
+        height: "209px !important",
+
+        right: "-5px !important",
       },
     },
   },
@@ -28,10 +30,11 @@ export const mainUseCases: CaseCardProps[] = [
       bottom: "-12% !important",
       right: "0 !important",
 
-      "@media(max-width: 414px)": {
-        width: "231px !important",
-        height: "262px !important",
+      "@media(max-width: 545px)": {
+        width: "183px !important",
+        height: "208px !important",
 
+        bottom: "-32% !important",
         right: "-5% !important",
       },
     },
@@ -49,8 +52,10 @@ export const mainUseCases: CaseCardProps[] = [
       right: "0 !important",
 
       "@media(max-width: 545px)": {
-        width: "258px !important",
-        height: "251px !important",
+        width: "165px !important",
+        height: "161px !important",
+
+        right: "10% !important",
       },
     },
   },
@@ -67,8 +72,11 @@ export const mainUseCases: CaseCardProps[] = [
       right: "-7% !important",
 
       "@media(max-width: 545px)": {
-        width: "281px !important",
-        height: "230px !important",
+        width: "232px !important",
+        height: "190px !important",
+
+        bottom: "-30% !important",
+        right: "-2% !important",
       },
     },
   },
@@ -85,8 +93,8 @@ export const mainUseCases: CaseCardProps[] = [
       right: "-11% !important",
 
       "@media(max-width: 545px)": {
-        width: "270px !important",
-        height: "274px !important",
+        width: "190px !important",
+        height: "201px !important",
 
         bottom: "-30% !important",
         right: "-8% !important",
@@ -133,11 +141,11 @@ export const mainUseCases: CaseCardProps[] = [
       right: "-34% !important",
 
       "@media(max-width: 545px)": {
-        width: "346px !important",
-        height: "364px !important",
+        width: "190px !important",
+        height: "200px !important",
 
-        bottom: "-40% !important",
-        right: "-25% !important",
+        bottom: "-24% !important",
+        right: "-7% !important",
       },
     },
   },

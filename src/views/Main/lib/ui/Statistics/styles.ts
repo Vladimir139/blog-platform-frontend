@@ -6,6 +6,7 @@ export const Wrapper = styled("section", {
   display: "flex",
   alignItems: "start",
   justifyContent: "space-between",
+  position: "relative",
 
   background: "#010123",
 
@@ -29,9 +30,7 @@ export const Wrapper = styled("section", {
   },
 
   "@media(max-width: 650px)": {
-    padding: "70px 26px 69px 26px",
-
-    gridTemplateColumns: "1fr",
+    padding: "31px 23px 28px 23px",
 
     gap: 30,
   },
@@ -63,8 +62,8 @@ export const Number = styled("p", {
   },
 
   "@media(max-width: 650px)": {
-    fontSize: 35,
-    lineHeight: "37px",
+    fontSize: 32,
+    lineHeight: "30px",
   },
 });
 
@@ -109,6 +108,20 @@ export const DecorImageRubinGlow = styled(Image, {
       1: {
         top: "-100% !important",
         transform: "translateX(-80%)",
+
+        "@media(max-width: 1190px)": {
+          top: "50px !important",
+          left: "50% !important",
+
+          transform: "translateX(-50%)",
+        },
+
+        "@media(max-width: 650px)": {
+          top: "-50px !important",
+          left: "50% !important",
+
+          transform: "translateX(-50%)",
+        },
       },
       2: {
         top: "-100% !important",

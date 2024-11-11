@@ -481,6 +481,10 @@ export const DecorImageBigGlow = styled(Image, {
 
   width: "1514px !important",
   height: "492px !important",
+
+  "@media(max-width: 450px)": {
+    display: "none",
+  },
 });
 
 export const Title = styled("h2", {
@@ -544,6 +548,10 @@ export const Description = styled("p", {
 
     maxWidth: 286,
   },
+
+  "@media(max-width: 400px)": {
+    margin: "0px 20px 33px",
+  },
 });
 
 export const ButtonsList = styled("div", {
@@ -569,6 +577,6 @@ export const ButtonsList = styled("div", {
 
     flexDirection: "column",
 
-    maxWidth: 210,
+    maxWidth: 250,
   },
 });

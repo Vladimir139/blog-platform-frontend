@@ -7,8 +7,8 @@ export const Wrapper = styled("section", {
 
   position: "relative",
 
-  "@media(max-width: 450px)": {
-    margin: "75px 40px",
+  "@media(max-width: 550px)": {
+    margin: "30px 40px",
   },
 });
 
@@ -22,6 +22,10 @@ export const DecorImageBlueGlowOval = styled(Image, {
 
   width: "894px !important",
   height: "1078px !important",
+
+  "@media(max-width: 600px)": {
+    display: "none",
+  },
 });
 
 export const DecorImageRubinGlow = styled(Image, {
@@ -34,6 +38,10 @@ export const DecorImageRubinGlow = styled(Image, {
 
   width: "732px !important",
   height: "600px !important",
+
+  "@media(max-width: 600px)": {
+    display: "none",
+  },
 });
 
 export const SecuritiesLogoList = styled("div", {
@@ -54,10 +62,10 @@ export const SecuritiesLogoList = styled("div", {
     gap: 70,
   },
 
-  "@media(max-width: 445px)": {
-    gap: 40,
+  "@media(max-width: 550px)": {
+    gap: 24,
 
-    margin: "39px auto 91px",
+    margin: "39px auto 49px",
   },
 });
 

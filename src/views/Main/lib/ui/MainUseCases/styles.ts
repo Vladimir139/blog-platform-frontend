@@ -6,6 +6,10 @@ export const Wrapper = styled("section", {
   marginTop: 90,
 
   position: "relative",
+
+  "@media(max-width: 530px)": {
+    marginTop: 23,
+  },
 });
 
 export const DecorImageCasesText = styled(Image, {
@@ -25,8 +29,10 @@ export const DecorImageCasesText = styled(Image, {
   },
 
   "@media(max-width: 530px)": {
-    width: "383px !important",
-    height: "100px !important",
+    // width: "383px !important",
+    // height: "100px !important",
+
+    display: "none",
   },
 });
 
@@ -61,5 +67,9 @@ export const CasesList = styled("div", {
 
   "@media(max-width: 1190px)": {
     justifyContent: "center",
+  },
+
+  "@media(max-width: 530px)": {
+    marginTop: 10,
   },
 });

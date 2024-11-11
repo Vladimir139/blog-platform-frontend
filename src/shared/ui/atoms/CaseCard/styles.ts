@@ -20,7 +20,9 @@ export const Wrapper = styled("div", {
   borderRadius: 20,
 
   "@media(max-width: 545px)": {
-    padding: "33px 29px 0 29px",
+    padding: "31px 18px 0 29px",
+
+    height: 290,
   },
 });
 

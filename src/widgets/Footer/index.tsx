@@ -54,7 +54,7 @@ export const Footer: FC = () => (
         <S.Copyrite>
           Cryptory LLC, 131 Continental Drive Suite 305, <br /> Newark, New Castle, Delaware 19713
         </S.Copyrite>
-        <S.Copyrite>© 2024 All Rights Reserved By Cryptory</S.Copyrite>
+        <S.Copyrite mobileHidden>© 2024 All Rights Reserved By Cryptory</S.Copyrite>
         <S.SocialNetworksList>
           <S.SocialNetwork href="https://t.me/CryptoryAI_bot">
             <WhiteTelegramIcon />

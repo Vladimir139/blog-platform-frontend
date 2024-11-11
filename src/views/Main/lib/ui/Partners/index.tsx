@@ -6,47 +6,67 @@ import * as S from "./styles";
 export const Partners: FC = () => (
   <S.Wrapper>
     <Marquee speed={60} direction="right" autoFill>
+      <S.PartnerImg partner="ens" src="/images/partners/ens1.png" alt="partner logo" fill />
       <S.PartnerImg
-        partner="cryptopunks"
-        src="/images/partners/cryptopunks1.png"
-        alt="cryptopunks partner logo"
+        partner="beatyShield"
+        src="/images/partners/beatyShield.png"
+        alt="partner logo"
+        fill
+      />
+      <S.PartnerImg partner="bg" src="/images/partners/bg.png" alt="bg partner logo" fill />
+      <S.PartnerImg
+        partner="blackHeroFace"
+        src="/images/partners/blackHeroFace.png"
+        alt="partner logo"
+        fill
+      />
+      <S.PartnerImg partner="bot" src="/images/partners/bot.png" alt="partner logo" fill />
+      <S.PartnerImg partner="bot2" src="/images/partners/bot2.png" alt="partner logo" fill />
+      <S.PartnerImg partner="copilot" src="/images/partners/copilot.png" alt="partner logo" fill />
+      <S.PartnerImg partner="figure" src="/images/partners/figure.png" alt="partner logo" fill />
+      <S.PartnerImg
+        partner="goalInBot"
+        src="/images/partners/goalInBot.png"
+        alt="partner logo"
+        fill
+      />
+      <S.PartnerImg partner="lp" src="/images/partners/lp.png" alt="partner logo" fill />
+      <S.PartnerImg partner="mInGoal" src="/images/partners/mInGoal.png" alt="partner logo" fill />
+      <S.PartnerImg partner="mLines" src="/images/partners/mLines.png" alt="partner logo" fill />
+      <S.PartnerImg
+        partner="niceGirl"
+        src="/images/partners/niceGirl.png"
+        alt="partner logo"
+        fill
+      />
+      <S.PartnerImg partner="ox" src="/images/partners/ox.png" alt="partner logo" fill />
+      <S.PartnerImg
+        partner="readySwap"
+        src="/images/partners/readySwap.png"
+        alt="partner logo"
+        fill
+      />
+      <S.PartnerImg partner="shield" src="/images/partners/shield.png" alt="partner logo" fill />
+      <S.PartnerImg partner="spydefi" src="/images/partners/spydefi.png" alt="partner logo" fill />
+      <S.PartnerImg
+        partner="transformer"
+        src="/images/partners/transformer.png"
+        alt="partner logo"
         fill
       />
       <S.PartnerImg
-        partner="topshot"
-        src="/images/partners/topshot1.png"
-        alt="topshot partner logo"
-        fill
-      />
-      <S.PartnerImg partner="zed" src="/images/partners/zed1.png" alt="zed partner logo" fill />
-      <S.PartnerImg
-        partner="sandbox"
-        src="/images/partners/sandbox1.png"
-        alt="sandbox partner logo"
+        partner="treasury"
+        src="/images/partners/treasury.png"
+        alt="partner logo"
         fill
       />
       <S.PartnerImg
-        partner="veefriends"
-        src="/images/partners/veefriends1.png"
-        alt="veefriends partner logo"
+        partner="cryptodo"
+        src="/images/partners/cryptodo.png"
+        alt="partner logo"
         fill
       />
-      <S.PartnerImg
-        partner="rarible"
-        src="/images/partners/rarible1.png"
-        alt="rarible partner logo"
-        fill
-      />
-      <S.PartnerImg partner="ens" src="/images/partners/ens1.png" alt="ens partner logo" fill />
-      <S.PartnerImg partner="axie" src="/images/partners/axie1.png" alt="axie partner logo" fill />
-      <S.PartnerImg
-        partner="opensea"
-        src="/images/partners/opensea1.png"
-        alt="opensea partner logo"
-        fill
-      />
-      <S.PartnerImg partner="bayc" src="/images/partners/bayc1.png" alt="bayc partner logo" fill />
-      <S.PartnerImg partner="dec" src="/images/partners/dec3.png" alt="dec partner logo" fill />
+      <S.PartnerImg partner="unibot" src="/images/partners/unibot.png" alt="partner logo" fill />
     </Marquee>
   </S.Wrapper>
 );

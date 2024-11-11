@@ -6,6 +6,10 @@ export const Wrapper = styled("section", {
   marginTop: 110,
 
   position: "relative",
+
+  "@media(max-width: 650px)": {
+    marginTop: 53,
+  },
 });
 
 export const DecorImageBlueLongGlow = styled(Image, {
@@ -18,6 +22,10 @@ export const DecorImageBlueLongGlow = styled(Image, {
 
   width: "1728px !important",
   height: "1240px !important",
+
+  "@media(max-width: 650px)": {
+    display: "none",
+  },
 });
 
 export const DecorImageRubinGlowLeft = styled(Image, {
@@ -30,6 +38,10 @@ export const DecorImageRubinGlowLeft = styled(Image, {
 
   width: "732px !important",
   height: "600px !important",
+
+  "@media(max-width: 650px)": {
+    display: "none",
+  },
 });
 
 export const DecorImageRubinGlowBottom = styled(Image, {
@@ -42,13 +54,15 @@ export const DecorImageRubinGlowBottom = styled(Image, {
 
   width: "732px !important",
   height: "600px !important",
+
+  "@media(max-width: 650px)": {
+    display: "none",
+  },
 });
 
 export const WrapperRoadmap = styled("div", {
   position: "relative",
   overflowX: "scroll",
-
-  justifyContent: "center",
 
   width: "100%",
   height: "839px",
@@ -56,7 +70,7 @@ export const WrapperRoadmap = styled("div", {
   marginTop: 27,
 
   "@media(max-width: 768px)": {
-    height: "504px",
+    height: "361px",
   },
 });
 
@@ -64,6 +78,10 @@ export const RoadmapLine = styled(Image, {
   width: "2674px !important",
   height: "501px !important",
   objectFit: "cover",
+
+  "@media(max-width: 768px)": {
+    display: "none",
+  },
 });
 
 const moveSideToSide = keyframes({
@@ -116,17 +134,30 @@ export const ScrollHelper = styled("div", {
   },
 });
 
-export const RoadmapLineMobile = styled(Image, {
-  width: "2674px !important",
-  height: "501px !important",
-  objectFit: "cover",
+export const ScrollHelperBottom = styled("div", {
+  width: "85px",
+  height: "85px",
 
-  display: "none",
+  cursor: "pointer",
 
-  "@media(max-width: 768px)": {
-    display: "block",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 
-    left: "2674px !important",
+  backgroundColor: "#09093F",
+
+  border: "1px solid #645EA9",
+  borderRadius: "9999px",
+  position: "relative",
+
+  margin: "33px auto 0",
+
+  "& svg": {
+    position: "absolute",
+    left: "50%",
+    top: "50%",
+
+    transform: "translateY(-50%)",
   },
 });
 
@@ -142,6 +173,19 @@ export const PhaseBlock = styled("div", {
 
   borderRadius: 10,
 
+  "@media(max-width: 768px)": {
+    padding: "22px 7px 21px 30px",
+
+    width: "300px",
+    height: 405,
+
+    position: "relative",
+    top: "auto !important",
+    left: "auto !important",
+    right: "auto !important",
+    bottom: "auto !important",
+  },
+
   variants: {
     blockNumber: {
       1: {
@@ -152,64 +196,64 @@ export const PhaseBlock = styled("div", {
         top: 528,
         left: 281,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 650,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 650,
+        // },
       },
       3: {
         top: 95,
         left: 650,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 1275,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 1275,
+        // },
       },
       4: {
         top: 528,
         left: 879,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 1988,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 1988,
+        // },
       },
       5: {
         top: 95,
         left: 1275,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 2610,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 2610,
+        // },
       },
       6: {
         top: 528,
         left: 1614,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 3315,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 3315,
+        // },
       },
       7: {
         top: 95,
         left: 1988,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 3945,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 3945,
+        // },
       },
       8: {
         top: 528,
         left: 2174,
 
-        "@media(max-width: 768px)": {
-          top: 95,
-          left: 4645,
-        },
+        // "@media(max-width: 768px)": {
+        //   // top: 95,
+        //   // left: 4645,
+        // },
       },
     },
   },
@@ -235,6 +279,11 @@ export const PhaseTitle = styled("p", {
   marginBottom: 19,
 
   maxWidth: 314,
+
+  "@media(max-width: 768px)": {
+    marginTop: 17,
+    marginBottom: 15,
+  },
 });
 
 export const Description = styled("p", {
@@ -244,4 +293,15 @@ export const Description = styled("p", {
   letterSpacing: "0.5px",
 
   color: "#FFFFFFB0",
+
+  "@media(max-width: 768px)": {
+    fontSize: 14,
+  },
+});
+
+export const WrapperSwiper = styled("div", {
+  marginTop: 33,
+  marginLeft: 10,
+
+  width: "100%",
 });

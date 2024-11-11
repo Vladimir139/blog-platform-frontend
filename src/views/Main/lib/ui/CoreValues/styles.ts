@@ -28,7 +28,9 @@ export const Wrapper = styled("section", {
   },
 
   "@media(max-width: 550px)": {
-    padding: "20px",
+    padding: "20px 10px 35px",
+
+    gap: 0,
   },
 });
 
@@ -42,6 +44,10 @@ export const DecorImageRubinGlow = styled(Image, {
 
   width: "732px !important",
   height: "600px !important",
+
+  "@media(max-width: 450px)": {
+    display: "none",
+  },
 });
 
 export const DecorImageBigGlow = styled(Image, {
@@ -54,6 +60,10 @@ export const DecorImageBigGlow = styled(Image, {
 
   width: "800px !important",
   height: "672px !important",
+
+  "@media(max-width: 450px)": {
+    display: "none",
+  },
 });
 
 export const WrapperInfo = styled("div", {
@@ -85,8 +95,8 @@ export const Title = styled("h3", {
   },
 
   "@media(max-width: 550px)": {
-    fontSize: 23,
-    lineHeight: "25px",
+    fontSize: 36,
+    lineHeight: "75px",
   },
 });
 
