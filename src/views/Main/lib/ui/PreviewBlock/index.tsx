@@ -36,10 +36,9 @@ export const PreviewBlock: FC = () => (
       <S.SmallPinkVector1Radial isTopRight />
     </S.WrapperGlowsRightTop>
     <S.DecorImageBigGlow src="/images/preview/previewBigGlow.png" alt="decor image" fill />
-    <S.Title>Navigating the whole web3 innovation from one app</S.Title>
+    <S.Title>Navigating the whole web3 and AI innovation from one app</S.Title>
     <S.Description>
-      Cryptory is a tech solution that gives you access to the most innovative tools/utilities at
-      your fingertip as at when available.
+      Unlock the power of KOL copy trading, deep analytics and advanced utilities with Cryptory
       <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />
     </S.Description>
     <S.ButtonsList>

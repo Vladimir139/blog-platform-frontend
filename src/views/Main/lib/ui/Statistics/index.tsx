@@ -21,7 +21,7 @@ export const Statistics: FC = () => {
         <S.Number>
           <CountUp end={10000} duration={2.5} />+
         </S.Number>
-        <S.Description>communities</S.Description>
+        <S.Description>Product users</S.Description>
       </S.StatisticBlock>
       <S.VerticalDivider>
         <S.DecorImageRubinGlow
@@ -49,7 +49,7 @@ export const Statistics: FC = () => {
         <S.Number>
           <CountUp end={40000} duration={2.5} />+
         </S.Number>
-        <S.Description>Web3 users target.</S.Description>
+        <S.Description>Communities added</S.Description>
       </S.StatisticBlock>
       <S.VerticalDivider>
         <S.DecorImageRubinGlow
@@ -63,7 +63,7 @@ export const Statistics: FC = () => {
         <S.Number>
           $<CountUp end={10000} duration={2.5} />
         </S.Number>
-        <S.Description>Web3 Utilities TVL servicing</S.Description>
+        <S.Description>Total trading volume</S.Description>
       </S.StatisticBlock>
     </S.Wrapper>
   );

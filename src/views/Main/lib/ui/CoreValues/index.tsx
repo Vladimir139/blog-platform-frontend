@@ -7,11 +7,12 @@ import * as S from "./styles";
 export const CoreValues: FC = () => (
   <S.Wrapper>
     <S.WrapperInfo>
-      <S.Title>CORE VALUES</S.Title>
+      <S.Title>About Cryptory</S.Title>
       <S.Description>
-        At Cryptory, we are guided by three core values: integrity, diligence, and accountability.
-        These values shape the way we conduct ourselves as a company and inform our interactions
-        with our customers, partners, and employees.
+        Cryptory is an advanced Web3 aggregator and the first multichain tool for automated KOL
+        trade copying on Telegram. The platform integrates a range of innovative products, including
+        trading and analytics tools, KOL copy trading, AI-driven signals, a utility launchpad, and
+        more, making it ideal for both beginners and seasoned traders
       </S.Description>
       <S.WrapperButton>
         <Button
@@ -19,7 +20,7 @@ export const CoreValues: FC = () => (
           stretch
           onClick={() => window.open("https://t.me/CryptoryAI_bot", "_blank")}
         >
-          <div style={{ position: "relative", zIndex: 4 }}>Open dashboard</div>
+          <div style={{ position: "relative", zIndex: 4 }}>Launch DApp</div>
         </Button>
       </S.WrapperButton>
     </S.WrapperInfo>

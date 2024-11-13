@@ -494,7 +494,7 @@ export const Title = styled("h2", {
 
   textAlign: "center",
 
-  maxWidth: 817,
+  maxWidth: 947,
 
   margin: "200px auto 0",
 

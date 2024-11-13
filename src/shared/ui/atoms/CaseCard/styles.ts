@@ -28,7 +28,7 @@ export const Wrapper = styled("div", {
 
 export const Title = styled("h3", {
   fontSize: 30,
-  lineHeight: "23px",
+  lineHeight: "34px",
   fontWeight: 400,
 
   marginBottom: 17,
@@ -45,6 +45,8 @@ export const Description = styled("p", {
   lineHeight: "26px",
   fontWeight: 400,
 
+  whiteSpace: "pre-wrap",
+
   color: "#9090CE",
 });
 
@@ -55,6 +57,8 @@ export const StyledImage = styled(Image, {
   top: "auto !important",
   left: "auto !important",
 
+  zIndex: -1,
+
   bottom: "-20% !important",
   right: "-20% !important",
 });
@@ -63,7 +67,7 @@ export const StyledDecorImage = styled(Image, {
   width: "461px !important",
   height: "481px !important",
 
-  zIndex: -1,
+  zIndex: -3,
 
   top: "0 !important",
   bottom: "auto !important",

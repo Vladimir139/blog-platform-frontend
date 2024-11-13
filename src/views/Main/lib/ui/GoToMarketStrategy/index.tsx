@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { FC } from "react";
 
 import {
@@ -15,7 +16,7 @@ import * as S from "./styles";
 export const GoToMarketStrategy: FC = () => (
   <S.Wrapper>
     <Title id="gtMarketingStrategy">GO-TO-MARKET STRATEGY</Title>
-    <S.SubTitle>Innovative tools/utilities at your fingertip.</S.SubTitle>
+    <S.SubTitle>Accelerating Web3 adoption with Cryptory</S.SubTitle>
     <S.WrapperBlock>
       <S.Block>
         <S.WrapperCoreValues>
@@ -26,12 +27,14 @@ export const GoToMarketStrategy: FC = () => (
               fill
             />
             <S.InfoWrapper>
-              <S.TitleCoreValues>CORE VALUES</S.TitleCoreValues>
+              <S.TitleCoreValues>Dynamic growth</S.TitleCoreValues>
               <S.Description>
-                Cryptory is committed to ensuring widespread adoption of our cutting-edge utilities
-                aggregator/marketplace. Our user-friendly platform is backed by a robust marketing
-                campaign designed to reach users worldwide and we are willing to share referral
-                income to people who promote this to their user-base.
+                Cryptory is dedicated to driving the global adoption of our advanced Web3 utilities
+                aggregator and innovative trading tools. Our intuitive platform is supported by a
+                comprehensive marketing strategy aimed at reaching users worldwide, empowering
+                everyone to tap into Web3 with ease. We actively collaborate with KOLs and offer
+                referral incentives, sharing income with those who promote Cryptory within their
+                networks, expanding our community and impact together.
               </S.Description>
               <S.WrapperButton>
                 <Button
@@ -40,12 +43,28 @@ export const GoToMarketStrategy: FC = () => (
                   css={{ marginTop: 10 }}
                   onClick={() => window.open("https://t.me/CryptoryAI_bot", "_blank")}
                 >
-                  <div style={{ position: "relative", zIndex: 4 }}>Open dashboard</div>
+                  <div style={{ position: "relative", zIndex: 4 }}>Launch DApp</div>
                 </Button>
               </S.WrapperButton>
             </S.InfoWrapper>
           </S.InnerBlockWrapper>
-          <S.StyledImage src="/images/decor/rocketGoToMarket.png" alt="decor image" fill />
+          {/* <S.StyledImage src="/images/decor/rocketGoToMarket.png" alt="decor image" fill /> */}
+          <motion.div
+            style={{ zIndex: 2 }}
+            initial={{ x: 0, y: 0 }}
+            animate={{
+              x: [-30, 0],
+              y: [0, 30],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              repeat: Infinity,
+              repeatType: "reverse", // Плавное возвращение
+            }}
+          >
+            <S.StyledImage src="/images/decor/rocketGoToMarket.png" alt="decor image" fill />
+          </motion.div>
         </S.WrapperCoreValues>
         <S.InitiativesBlock>
           <S.InitiativeText>
@@ -58,7 +77,7 @@ export const GoToMarketStrategy: FC = () => (
             <ReferralSystemIcon /> Referral System
           </S.InitiativeText>
           <S.InitiativeText>
-            <ContestAndPromotionsIcon /> Contest and Promotions
+            <ContestAndPromotionsIcon /> Contests and promotions
           </S.InitiativeText>
           <S.InitiativeText>
             <ContentMarketingIcon /> Content Marketing
@@ -71,9 +90,9 @@ export const GoToMarketStrategy: FC = () => (
       </S.Block>
     </S.WrapperBlock>
     <S.DescriptionInitiatives>
-      These initiatives represent just a few facets of our comprehensive marketing strategy. We will
-      continually push and work on getting on exchanges and more as we gain more traction and users
-      for our products and services.
+      These initiatives are just a few aspects of our comprehensive marketing strategy. We are
+      committed to continuously expanding our efforts, including securing exchange listings and
+      more, as we gain greater traction and attract more users to our products and services
     </S.DescriptionInitiatives>
   </S.Wrapper>
 );

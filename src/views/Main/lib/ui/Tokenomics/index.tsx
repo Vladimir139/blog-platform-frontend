@@ -12,8 +12,8 @@ export const Tokenomics: FC = () => {
 
   return (
     <S.Wrapper>
-      <Title subTitle="Innovative tools/utilities at your fingertip." id="tokenomics">
-        Tokenomics
+      <Title subTitle="Strategic Tokenomics to Power $CTORY Growth" id="tokenomics">
+        Cryptory Tokenomics
       </Title>
       <S.DecorImageRubinGlow src="/images/decor/rubinGlow.png" alt="decor image" fill />
       <S.DecorImageBlueGlowOval src="/images/security/blueGlowOval.png" alt="decor image" fill />
@@ -22,7 +22,7 @@ export const Tokenomics: FC = () => {
           <S.WrapperTokenInfo>
             <S.TokenInfoBlockTokenInfo>
               <S.BlockTitleTokenInfo>Token Name</S.BlockTitleTokenInfo>
-              <S.BlockValueTokenInfo>$CRYPT</S.BlockValueTokenInfo>
+              <S.BlockValueTokenInfo>$CTORY</S.BlockValueTokenInfo>
             </S.TokenInfoBlockTokenInfo>
             <S.Divider />
             <S.TokenInfoBlockTokenInfo>
