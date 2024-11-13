@@ -48,7 +48,6 @@ export const GoToMarketStrategy: FC = () => (
               </S.WrapperButton>
             </S.InfoWrapper>
           </S.InnerBlockWrapper>
-          {/* <S.StyledImage src="/images/decor/rocketGoToMarket.png" alt="decor image" fill /> */}
           <motion.div
             style={{ zIndex: 2 }}
             initial={{ x: 0, y: 0 }}
@@ -60,7 +59,7 @@ export const GoToMarketStrategy: FC = () => (
               duration: 2,
               ease: "easeInOut",
               repeat: Infinity,
-              repeatType: "reverse", // Плавное возвращение
+              repeatType: "reverse",
             }}
           >
             <S.StyledImage src="/images/decor/rocketGoToMarket.png" alt="decor image" fill />

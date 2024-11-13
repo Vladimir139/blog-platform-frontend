@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import React, { FC } from "react";
 import { useMedia } from "react-use";
 
 import { Container, Title } from "@/shared/ui/atoms";
 
 import * as S from "./styles";
+
+const fadeInOut = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 export const Tokenomics: FC = () => {
   const isMobileTokenomicsPhoto = useMedia("(max-width: 690px)", false);
@@ -49,34 +55,41 @@ export const Tokenomics: FC = () => {
       <S.WrapperPercentages>
         <Title>Buys & Sell Taxes - 5%</Title>
         <Container>
-          <S.Percentages>
-            <S.TokenInfoBlock>
-              <S.BlockTitle>3% — Marketing and User Acquisition</S.BlockTitle>
-              <S.BlockValue>
-                A more focused approach combining marketing efforts with strategies specifically
-                aimed at acquiring new users, thus enhancing community growth and engagement.
-              </S.BlockValue>
-            </S.TokenInfoBlock>
-            <S.VeriticalDivider noHidden />
-            <S.TokenInfoBlock>
-              <S.BlockTitle>1% — Team</S.BlockTitle>
-              <S.BlockValue>
-                This allocation ensures that we can attract, retain, and adequately compensate top
-                talent, essential for our long-term success.
-              </S.BlockValue>
-            </S.TokenInfoBlock>
-            <S.VeriticalDivider />
-            <S.TokenInfoBlock>
-              <S.BlockTitle>1% — Ecosystem</S.BlockTitle>
-              <S.BlockValue>
-                This is a multi-faceted allocation that includes: <br />
-                <span>RevShare:</span> Continuing our commitment to sharing our success with our
-                community.
-                <br />
-                <span>Buybacks:</span> Tokens bought back are burnt forever.
-              </S.BlockValue>
-            </S.TokenInfoBlock>
-          </S.Percentages>
+          <motion.div
+            whileInView="visible"
+            viewport={{ once: false }}
+            initial="hidden"
+            variants={fadeInOut}
+          >
+            <S.Percentages>
+              <S.TokenInfoBlock>
+                <S.BlockTitle>3% — Marketing and User Acquisition</S.BlockTitle>
+                <S.BlockValue>
+                  A more focused approach combining marketing efforts with strategies specifically
+                  aimed at acquiring new users, thus enhancing community growth and engagement.
+                </S.BlockValue>
+              </S.TokenInfoBlock>
+              <S.VeriticalDivider noHidden />
+              <S.TokenInfoBlock>
+                <S.BlockTitle>1% — Team</S.BlockTitle>
+                <S.BlockValue>
+                  This allocation ensures that we can attract, retain, and adequately compensate top
+                  talent, essential for our long-term success.
+                </S.BlockValue>
+              </S.TokenInfoBlock>
+              <S.VeriticalDivider />
+              <S.TokenInfoBlock>
+                <S.BlockTitle>1% — Ecosystem</S.BlockTitle>
+                <S.BlockValue>
+                  This is a multi-faceted allocation that includes: <br />
+                  <span>RevShare:</span> Continuing our commitment to sharing our success with our
+                  community.
+                  <br />
+                  <span>Buybacks:</span> Tokens bought back are burnt forever.
+                </S.BlockValue>
+              </S.TokenInfoBlock>
+            </S.Percentages>
+          </motion.div>
         </Container>
       </S.WrapperPercentages>
     </S.Wrapper>

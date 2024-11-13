@@ -8,6 +8,8 @@ export const Wrapper = styled("section", {
   justifyContent: "space-between",
 
   overflow: "hidden",
+  zIndex: 3,
+  backgroundColor: "#010123",
 
   padding: "63px 113px 63px 73px",
 

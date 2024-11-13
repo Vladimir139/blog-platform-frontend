@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React, { FC } from "react";
 
 import { Title } from "@/shared/ui/atoms";
@@ -12,19 +13,49 @@ export const Security: FC = () => (
       Security
     </Title>
     <S.SecuritiesLogoList>
-      <S.SecurityLogo
-        security="assureDefi"
-        src="/images/security/assureDefiDark2.png"
-        alt="security logo"
-        fill
-      />
-      <S.SecurityLogo
-        security="blockSafu"
-        src="/images/security/blockSafuDark2.png"
-        alt="security logo"
-        fill
-      />
-      <S.SecurityLogo security="sp" src="/images/security/spDark2.png" alt="security logo" fill />
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+      >
+        <S.SecurityLogo
+          security="assureDefi"
+          src="/images/security/assureDefiDark2.png"
+          alt="security logo"
+          fill
+        />
+      </motion.div>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+      >
+        <S.SecurityLogo
+          security="blockSafu"
+          src="/images/security/blockSafuDark2.png"
+          alt="security logo"
+          fill
+        />
+      </motion.div>
+      <motion.div
+        variants={{
+          hidden: { opacity: 0, y: -50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: false }}
+      >
+        <S.SecurityLogo security="sp" src="/images/security/spDark2.png" alt="security logo" fill />
+      </motion.div>
     </S.SecuritiesLogoList>
   </S.Wrapper>
 );

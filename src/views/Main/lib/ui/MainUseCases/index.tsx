@@ -38,6 +38,7 @@ export const MainUseCases: FC = () => {
       <S.CasesList>
         {mainUseCases.map((useCase) => (
           <motion.div
+            style={{ width: "100%", maxWidth: 528 }}
             key={useCase.title}
             variants={itemVariants}
             initial="hidden"
