@@ -10,6 +10,8 @@ export const Footer = styled("footer", {
 
   width: "100%",
 
+  marginTop: 100,
+
   position: "relative",
 
   "&::before": {
@@ -26,6 +28,8 @@ export const Footer = styled("footer", {
   },
 
   "@media(max-width: 500px)": {
+    marginTop: 0,
+
     "&::before": {
       width: 0,
       height: 0,

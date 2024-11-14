@@ -12,7 +12,7 @@ const fadeInOut = {
 };
 
 export const Tokenomics: FC = () => {
-  const isMobileTokenomicsPhoto = useMedia("(max-width: 690px)", false);
+  const isMobileTokenomicsPhoto = useMedia("(max-width: 700px)", false);
   // const isMobileDistribution = useMedia("(max-width: 640px)", false);
   // const isMobilePercentages = useMedia("(max-width: 730px)", false);
 
@@ -44,8 +44,8 @@ export const Tokenomics: FC = () => {
           <S.StyledTokenomicsPhoto
             src={
               isMobileTokenomicsPhoto
-                ? "/images/tokenomics/tokenomicsMobile.png"
-                : "/images/tokenomics/tokenomics.png"
+                ? "/images/tokenomics/tokenomicsMobile2.png"
+                : "/images/tokenomics/tokenomics4.png"
             }
             alt="tokenomics photo"
             fill

@@ -3,12 +3,10 @@ import React, { FC } from "react";
 import { Container } from "@/shared/ui/atoms";
 import {
   CoreValues,
-  Faq,
   GoToMarketStrategy,
   MainUseCases,
   Partners,
   PreviewBlock,
-  RoadMap,
   Security,
   Statistics,
   Tokenomics,
@@ -30,8 +28,8 @@ export const MainPage: FC = () => (
     <Security />
     <S.Divider />
     <Tokenomics />
-    <RoadMap />
+    {/* <RoadMap /> */}
     {/* <OurTeam /> */}
-    <Faq />
+    {/* <Faq /> */}
   </>
 );

@@ -19,7 +19,7 @@ export const Statistics: FC = () => {
       )}
       <S.StatisticBlock>
         <S.Number>
-          <CountUp end={10000} duration={2.5} />+
+          <CountUp end={1000} duration={2.5} />+
         </S.Number>
         <S.Description>Product users</S.Description>
       </S.StatisticBlock>
@@ -47,7 +47,7 @@ export const Statistics: FC = () => {
       </S.VerticalDivider>
       <S.StatisticBlock>
         <S.Number>
-          <CountUp end={40000} duration={2.5} />+
+          <CountUp end={50} duration={2.5} />+
         </S.Number>
         <S.Description>Communities added</S.Description>
       </S.StatisticBlock>
@@ -61,7 +61,7 @@ export const Statistics: FC = () => {
       </S.VerticalDivider>
       <S.StatisticBlock>
         <S.Number>
-          $<CountUp end={10000} duration={2.5} />
+          $<CountUp end={25000} duration={2.5} />
         </S.Number>
         <S.Description>Total trading volume</S.Description>
       </S.StatisticBlock>

@@ -54,22 +54,22 @@ export const Divider = styled("div", {
 export const StyledTokenomicsPhoto = styled(Image, {
   position: "relative !important",
 
-  width: "682px !important",
-  height: "365px !important",
+  width: "590px !important",
+  height: "429px !important",
 
   "@media(max-width: 660px)": {
-    width: "502px !important",
-    height: "268px !important",
+    width: "501px !important",
+    height: "365px !important",
   },
 
   "@media(max-width: 480px)": {
-    width: "365px !important",
-    height: "260px !important",
+    width: "360px !important",
+    height: "262px !important",
   },
 
   "@media(max-width: 360px)": {
     width: "310px !important",
-    height: "220px !important",
+    height: "226px !important",
   },
 });
 
