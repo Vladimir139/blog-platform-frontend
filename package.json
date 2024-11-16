@@ -1,25 +1,24 @@
 {
-  "name": "cryptory",
+  "name": "blog-platform",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 7536",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@radix-ui/react-accordion": "^1.1.2",
-    "@stitches/react": "1.2.8",
-    "framer-motion": "^11.11.15",
+    "classnames": "^2.5.1",
+    "axios": "^1.7.2",
+    "effector": "^23.2.2",
+    "effector-react": "^23.2.1",
+    "sass": "^1.71.1",
     "next": "13.3.0",
     "normalize.css": "^8.0.1",
     "react": "18.3.1",
-    "react-countup": "^6.5.3",
     "react-dom": "18.3.1",
-    "react-fast-marquee": "^1.6.5",
-    "react-use": "^17.5.0",
-    "swiper": "^11.1.14"
+    "react-use": "^17.5.0"
   },
   "devDependencies": {
     "@types/node": "18.15.11",
