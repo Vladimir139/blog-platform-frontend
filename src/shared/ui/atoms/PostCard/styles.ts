@@ -7,6 +7,30 @@ export const WrapperCard = styled("div", {
   maxWidth: 384,
 
   cursor: "pointer",
+
+  position: "relative",
+});
+
+export const EditBtn = styled("button", {
+  position: "absolute",
+
+  zIndex: 2,
+
+  border: "none",
+
+  top: 20,
+  right: 20,
+
+  width: 30,
+  height: 30,
+
+  backgroundColor: "#F99141",
+
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  borderRadius: 7,
 });
 
 export const PreviewImage = styled(Image, {

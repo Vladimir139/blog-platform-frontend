@@ -1,4 +1,5 @@
 import "normalize.css";
+import "react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 
 import type { AppProps } from "next/app";
 import { FC } from "react";

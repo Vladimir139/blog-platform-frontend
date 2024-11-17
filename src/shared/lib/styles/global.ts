@@ -5,7 +5,7 @@ export const setupStyles = globalCss({
     scrollBehavior: "smooth",
   },
   body: {
-    backgroundColor: "#FFFFFF",
+    backgroundColor: "#F9F9F9",
     color: "#000000",
     fontFamily: "$Inter",
     fontSize: "16px",

@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { ArrowToRightTopIcon } from "@/shared/lib/icons";
+import { ArrowToRightTopIcon, EditIcon } from "@/shared/lib/icons";
 
 import * as S from "./styles";
 import { PostCardProps } from "./types";
@@ -12,8 +12,14 @@ export const PostCard: FC<PostCardProps> = ({
   date,
   title,
   shortDesc,
+  onEdit,
 }) => (
   <S.WrapperCard>
+    {onEdit && (
+      <S.EditBtn onClick={onEdit}>
+        <EditIcon />
+      </S.EditBtn>
+    )}
     <S.PreviewImage src={image} alt="preview post photo" fill />
     <S.AdditionalInfo>
       {firstname} {surname} • {date}

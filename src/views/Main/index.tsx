@@ -110,7 +110,7 @@ export const MainPage: FC = () => {
         <S.Divider />
         <S.Title>THE BLOG</S.Title>
         <S.Divider />
-        <S.TitlePostsList>All blog posts</S.TitlePostsList>
+        <S.TitlePostsList>Все посты</S.TitlePostsList>
         <S.PostsList>
           {currentPosts.map((post) => (
             <PostCard
@@ -127,12 +127,12 @@ export const MainPage: FC = () => {
         <ReactPaginateComponent
           previousLabel={
             <S.WrapperPrevBtn>
-              <LeftArrowIcon /> Previous
+              <LeftArrowIcon /> Предыдущая
             </S.WrapperPrevBtn>
           }
           nextLabel={
             <S.WrapperNextBtn>
-              Next
+              Следующая
               <LeftArrowIcon />
             </S.WrapperNextBtn>
           }

@@ -5,4 +5,5 @@ export interface PostCardProps {
   date: string;
   title: string;
   shortDesc: string;
+  onEdit?: () => void;
 }
