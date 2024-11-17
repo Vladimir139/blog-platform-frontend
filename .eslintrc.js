@@ -53,5 +53,11 @@ module.exports = {
     camelcase: 1,
     "import/no-extraneous-dependencies": 0,
     "react/no-unstable-nested-components": 0,
+    "no-underscore-dangle": [
+      "error",
+      {
+        allow: ["_id"],
+      },
+    ],
   },
 };
