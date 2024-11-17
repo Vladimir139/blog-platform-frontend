@@ -13,7 +13,7 @@ export const Header: FC = () => {
     <S.Header>
       <S.Navigation>
         <S.LeftWrapper>
-          <S.NavLink href="/">Твое имя</S.NavLink>
+          <S.UserNavLink href="/">Твое имя</S.UserNavLink>
         </S.LeftWrapper>
         <S.RightWrapper>
           <S.NavLink href="/" isActive={asPath === "/"}>

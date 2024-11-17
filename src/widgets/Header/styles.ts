@@ -70,3 +70,11 @@ export const NavLink = styled(Link, {
     },
   },
 });
+
+export const UserNavLink = styled(Link, {
+  fontSize: 20,
+  lineHeight: "24px",
+  fontWeight: 400,
+
+  textDecoration: "none",
+});
