@@ -1,14 +1,11 @@
-import { ChangeEvent, Dispatch, ReactNode, SetStateAction } from "react";
+import { ChangeEvent, ReactNode } from "react";
 
 export interface InputProps<T = string> {
   name?: string;
   placeholder?: string;
   value: T;
   defaultValue?: T;
-  onChange:
-    | ((event: ChangeEvent<HTMLInputElement>, value: T) => void)
-    | Dispatch<SetStateAction<T>>;
-
+  onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
   label?: ReactNode | string;
   size?: "default";
   radius?: "default";

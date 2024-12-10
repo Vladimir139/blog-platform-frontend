@@ -7,8 +7,8 @@ export const saveTokensStorage = ({
   access_token: string;
   refresh_token: string;
 }) => {
-  Cookies.set("accessToken", access_token);
-  Cookies.set("refreshToken", refresh_token);
+  Cookies.set("access_token", access_token);
+  Cookies.set("refresh_token", refresh_token);
 };
 
 export const removeTokensStorage = () => {

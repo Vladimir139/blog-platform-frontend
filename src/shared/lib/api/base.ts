@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 import { api } from "@/shared/lib/api/index";
 
 export const axios = axiosInstance.create({
-  baseURL: process.env.BASE_BOT_URL,
+  baseURL: process.env.NEXT_PUBLIC_API_URL,
   timeout: 30_000,
   headers: {
     Authorization: `Bearer ${Cookies.get("access_token")}`,
@@ -29,12 +29,21 @@ axios.interceptors.response.use(
   async (error) => {
     const originalRequest = error.config;
 
-    if (+error.response.status === 401 && Cookies.get("refresh_token")) {
-      const { data } = await api.auth.refresh();
+    if (error.response) {
+      if (error.response.status === 401 && Cookies.get("refresh_token")) {
+        try {
+          const { data } = await api.auth.refresh();
 
-      originalRequest.headers.Authorization = `Bearer ${data.access_token}`;
+          Cookies.set("access_token", data.access_token);
+          originalRequest.headers.Authorization = `Bearer ${data.access_token}`;
 
-      return axios(originalRequest);
+          return axios(originalRequest);
+        } catch (refreshError) {
+          return Promise.reject(refreshError);
+        }
+      }
+    } else {
+      console.log("Ошибка запроса:", error.message);
     }
 
     return Promise.reject(error);

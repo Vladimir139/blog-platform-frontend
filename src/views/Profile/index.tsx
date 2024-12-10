@@ -1,7 +1,9 @@
+import { useUnit } from "effector-react";
 import { useRouter } from "next/router";
 import React, { FC, useState } from "react";
 import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 
+import { $user } from "@/entities/user/model";
 import { LeftArrowIcon, UserBigIcon } from "@/shared/lib/icons";
 import { Button, Container, Input, PostCard } from "@/shared/ui/atoms";
 
@@ -10,6 +12,7 @@ import * as S from "./styles";
 const ReactPaginateComponent = ReactPaginate as unknown as React.FC<ReactPaginateProps>;
 
 export const ProfilePage: FC = () => {
+  const user = useUnit($user);
   const { push } = useRouter();
 
   const [selectedTypePosts, setSelectedTypePosts] = useState<"myPosts" | "favorites">("myPosts");
@@ -128,7 +131,9 @@ export const ProfilePage: FC = () => {
     <Container>
       <S.HeaderProfileLine>
         <S.WelcomeInfo>
-          <S.TitleWelcome>{getGreeting()}, Amanda</S.TitleWelcome>
+          <S.TitleWelcome>
+            {getGreeting()}, {user?.firstName}
+          </S.TitleWelcome>
           <S.DateText>
             {(() => {
               const dateStr = new Date().toLocaleDateString("ru-RU", {
@@ -154,8 +159,10 @@ export const ProfilePage: FC = () => {
                 <UserBigIcon />
               </S.UserPhoto>
               <S.WrapperUserData>
-                <S.Username>Alexa Rawles</S.Username>
-                <S.UserEmail>alexarawles@gmail.com</S.UserEmail>
+                <S.Username>
+                  {user?.firstName} {user?.lastName}
+                </S.Username>
+                <S.UserEmail>{user?.email}</S.UserEmail>
               </S.WrapperUserData>
             </S.UserInfo>
             <Button>Редактировать</Button>
