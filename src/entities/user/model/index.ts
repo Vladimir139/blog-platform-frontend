@@ -1,8 +1,10 @@
 import { createEvent, createStore } from "effector";
 
-export const $user = createStore<null | { firstname: string }>({ firstname: "Vova" });
+import { IUser } from "@/entities/user/model/types";
 
-export const setUser = createEvent<{ firstname: string }>();
+export const $user = createStore<null | IUser>(null);
+
+export const setUser = createEvent<IUser | null>();
 export const resetUser = createEvent();
 
 $user.on(setUser, (_, payload) => payload).reset(resetUser);

@@ -1,6 +1,6 @@
 export const postsUrls = {
   getAllPosts: "/posts",
-  getUserPosts: "/user/posts",
+  getMePosts: "/users/me/posts",
   createPost: "/posts",
   updatePost: (postId: number) => `/posts/${postId}`,
   deletePost: (postId: number) => `/posts/${postId}`,
