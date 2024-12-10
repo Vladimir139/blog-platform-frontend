@@ -1,6 +1,8 @@
-import React, { FC, useState } from "react";
+import { useUnit } from "effector-react";
+import React, { FC, useEffect, useState } from "react";
 import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 
+import { $posts, getAllPosts } from "@/entities/posts/model";
 import { LeftArrowIcon } from "@/shared/lib/icons";
 import { Container, PostCard } from "@/shared/ui/atoms";
 
@@ -9,89 +11,9 @@ import * as S from "./styles";
 const ReactPaginateComponent = ReactPaginate as unknown as React.FC<ReactPaginateProps>;
 
 export const MainPage: FC = () => {
-  const posts = [
-    {
-      _id: "1",
-      image: "/images/testPreviewPhoto.png",
-      title: "Уроки лидерства от Билла Уолша",
-      date: "1 Янв 2023",
-      firstname: "Алексей",
-      surname: "Иванов",
-      shortDesc: "Узнайте секреты превращения команды с 2-14 в 3-кратных победителей Супербоула.",
-    },
-    {
-      _id: "2",
-      image: "/images/testPreviewPhoto.png",
-      title: "Искусство войны в бизнесе",
-      date: "5 Фев 2023",
-      firstname: "Светлана",
-      surname: "Петрова",
-      shortDesc: "Применение стратегий Сунь Цзы к современным бизнес-задачам.",
-    },
-    {
-      _id: "3",
-      image: "/images/testPreviewPhoto.png",
-      title: "Осознанность для продуктивности",
-      date: "12 Мар 2023",
-      firstname: "Дмитрий",
-      surname: "Сидоров",
-      shortDesc: "Как практики осознанности повышают эффективность работы.",
-    },
-    {
-      _id: "4",
-      image: "/images/testPreviewPhoto.png",
-      title: "Исследуя космос",
-      date: "22 Апр 2023",
-      firstname: "Елена",
-      surname: "Кузнецова",
-      shortDesc: "Путешествие по последним открытиям в космических исследованиях.",
-    },
-    {
-      _id: "5",
-      image: "/images/testPreviewPhoto.png",
-      title: "Здоровое питание на бюджете",
-      date: "10 Май 2023",
-      firstname: "Михаил",
-      surname: "Попов",
-      shortDesc: "Советы и хитрости для питательных блюд без лишних затрат.",
-    },
-    {
-      _id: "6",
-      image: "/images/testPreviewPhoto.png",
-      title: "Будущее искусственного интеллекта",
-      date: "18 Июн 2023",
-      firstname: "Анна",
-      surname: "Волкова",
-      shortDesc: "Прогнозы и возможности ИИ в нашей жизни.",
-    },
-    {
-      _id: "7",
-      image: "/images/testPreviewPhoto.png",
-      title: "Путешествие по миру виртуально",
-      date: "27 Июл 2023",
-      firstname: "Сергей",
-      surname: "Соколов",
-      shortDesc: "Исследуйте мировые достопримечательности, не выходя из дома.",
-    },
-    {
-      _id: "8",
-      image: "/images/testPreviewPhoto.png",
-      title: "Основы устойчивого образа жизни",
-      date: "15 Авг 2023",
-      firstname: "Мария",
-      surname: "Лебедева",
-      shortDesc: "Простые шаги к снижению экологического следа.",
-    },
-    {
-      _id: "9",
-      image: "/images/testPreviewPhoto.png",
-      title: "Мастерство кулинарии",
-      date: "30 Сен 2023",
-      firstname: "Андрей",
-      surname: "Козлов",
-      shortDesc: "От новичка до шефа: ваш путь к успеху в кулинарии.",
-    },
-  ];
+  const posts = useUnit($posts);
+
+  console.log("posts", posts);
 
   const [currentPage, setCurrentPage] = useState(0);
   const postsPerPage = 6;
@@ -104,6 +26,10 @@ export const MainPage: FC = () => {
     setCurrentPage(selected);
   };
 
+  useEffect(() => {
+    getAllPosts();
+  }, []);
+
   return (
     <Container>
       <S.WrapperMainPage>
@@ -112,17 +38,19 @@ export const MainPage: FC = () => {
         <S.Divider />
         <S.TitlePostsList>Все посты</S.TitlePostsList>
         <S.PostsList>
-          {currentPosts.map((post) => (
-            <PostCard
-              key={post._id}
-              image={post.image}
-              title={post.title}
-              date={post.date}
-              firstname={post.firstname}
-              surname={post.surname}
-              shortDesc={post.shortDesc}
-            />
-          ))}
+          {currentPosts.length > 0
+            ? currentPosts.map((post) => (
+                <PostCard
+                  key={post.id}
+                  image={post.previewImage}
+                  title={post.title}
+                  date={new Date(post.updatedAt).toLocaleDateString("ru-RU")}
+                  firstname={post.author.firstName}
+                  surname={post.author.lastName}
+                  shortDesc={post.shortDesc}
+                />
+              ))
+            : "Пока постов нет :("}
         </S.PostsList>
         <ReactPaginateComponent
           previousLabel={
