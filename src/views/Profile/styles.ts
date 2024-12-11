@@ -76,6 +76,13 @@ export const UserInfo = styled("div", {
   gap: 24,
 });
 
+export const WrapperUserActions = styled("div", {
+  display: "flex",
+  alignItems: "center",
+
+  gap: 24,
+});
+
 export const WrapperUserData = styled("div", {
   display: "flex",
   flexDirection: "column",

@@ -6,4 +6,6 @@ export interface PostCardProps {
   title: string;
   shortDesc: string;
   onEdit?: () => void;
+  onClick?: () => void;
+  onDelete?: () => void;
 }

@@ -14,6 +14,8 @@ export const WrapperCard = styled("div", {
 export const EditBtn = styled("button", {
   position: "absolute",
 
+  cursor: "pointer",
+
   zIndex: 2,
 
   border: "none",
@@ -25,6 +27,30 @@ export const EditBtn = styled("button", {
   height: 30,
 
   backgroundColor: "#F99141",
+
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+  borderRadius: 7,
+});
+
+export const DeleteBtn = styled("button", {
+  position: "absolute",
+
+  cursor: "pointer",
+
+  zIndex: 2,
+
+  border: "none",
+
+  top: 20,
+  right: 65,
+
+  width: 30,
+  height: 30,
+
+  backgroundColor: "red",
 
   display: "flex",
   alignItems: "center",

@@ -13,3 +13,11 @@ export interface IPost {
   createdAt: Date;
   updatedAt: Date;
 }
+
+export interface CreatePostProps {
+  title: string;
+  featured: boolean;
+  shortDesc: string;
+  content: string;
+  previewImage: string;
+}

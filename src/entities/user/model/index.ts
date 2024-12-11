@@ -8,18 +8,31 @@ export const $user = createStore<null | IUser>(null);
 export const getMe = createEvent();
 export const setMe = createEvent<IUser | null>();
 export const resetMe = createEvent();
+export const editMe = createEvent<IUser>();
 
 // ------------------------------------------------------------------------------------
 
-export const getUserFx = createEffect(async () => {
+export const getMeFx = createEffect(async () => {
   try {
     const { data } = await api.user.getMe();
 
     return data;
   } catch (e) {
-    console.log("getUserFxError", e);
+    console.log("getMeFxError", e);
 
     api.auth.logout();
+
+    return null;
+  }
+});
+
+export const editMeFx = createEffect(async (payload: IUser) => {
+  try {
+    const { data } = await api.user.editMe(payload);
+
+    return data;
+  } catch (e) {
+    console.log("editMeFxError", e);
 
     return null;
   }
@@ -33,14 +46,25 @@ $user.on(setMe, (_, payload) => payload).reset(resetMe);
 
 sample({
   clock: getMe,
-  target: getUserFx,
+  target: getMeFx,
 });
 
 sample({
-  clock: getUserFx.doneData,
+  clock: getMeFx.doneData,
+  target: setMe,
+});
+
+sample({
+  clock: editMe,
+  target: editMeFx,
+});
+
+sample({
+  clock: editMeFx.doneData,
   target: setMe,
 });
 
 // ------------------------------------------------------------------------------------
 
-export const $loadingUser = getUserFx.pending;
+export const $loadingUser = getMeFx.pending;
+export const $loadingEditUser = editMeFx.pending;

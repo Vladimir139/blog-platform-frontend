@@ -21,10 +21,15 @@ export const Button = styled("button", {
   border: "none",
   outline: "none",
 
+  cursor: "pointer",
+
   variants: {
     theme: {
       orange: {
         background: "#F99141",
+      },
+      grey: {
+        background: "#757575",
       },
     },
     stretch: {

@@ -1,4 +1,5 @@
 import { useUnit } from "effector-react";
+import { useRouter } from "next/router";
 import React, { FC, useEffect, useState } from "react";
 import ReactPaginate, { ReactPaginateProps } from "react-paginate";
 
@@ -12,6 +13,7 @@ const ReactPaginateComponent = ReactPaginate as unknown as React.FC<ReactPaginat
 
 export const MainPage: FC = () => {
   const posts = useUnit($posts);
+  const { push } = useRouter();
 
   console.log("posts", posts);
 
@@ -48,6 +50,9 @@ export const MainPage: FC = () => {
                   firstname={post.author.firstName}
                   surname={post.author.lastName}
                   shortDesc={post.shortDesc}
+                  onClick={() => {
+                    push(`/posts/${post.id}`);
+                  }}
                 />
               ))
             : "Пока постов нет :("}
