@@ -15,7 +15,7 @@ export const Loader: FC<LoaderProps & HTMLAttributes<SVGElement>> = (props) => {
       viewBox="25 25 50 50"
       width={width}
       height={height}
-      // @ts-ignore
+      // eslint-disable-next-line react/destructuring-assignment
       style={props.style || {}}
       center={center}
       data-testid="Loader"

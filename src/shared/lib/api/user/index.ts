@@ -6,7 +6,7 @@ import { userUrls } from "@/shared/lib/api/user/urls";
 
 export const userApi = {
   getMe: async (): Promise<AxiosPromise<IUser>> => axios.get(userUrls.getMe),
-  getUser: async (id: number): Promise<AxiosPromise<IUser>> => axios.get(userUrls.getUser(id)),
+  getUser: async (id: string): Promise<AxiosPromise<IUser>> => axios.get(userUrls.getUser(id)),
   editMe: async (payload: IUser): Promise<AxiosPromise<IUser>> =>
     axios.put(userUrls.editMe, payload),
 };

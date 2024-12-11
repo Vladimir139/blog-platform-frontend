@@ -9,12 +9,12 @@ export const postsApi = {
   getMePosts: async (): Promise<AxiosPromise<IPost[]>> => axios.get(postsUrls.getMePosts),
   createPost: async (payload: CreatePostProps): Promise<AxiosPromise<IPost>> =>
     axios.post(postsUrls.createPost, payload),
-  updatePost: async (postId: number): Promise<AxiosPromise<IPost>> =>
-    axios.put(postsUrls.updatePost(postId)),
-  deletePost: async (postId: number): Promise<AxiosPromise<void>> =>
+  updatePost: async (postId: string, payload: CreatePostProps): Promise<AxiosPromise<IPost>> =>
+    axios.put(postsUrls.updatePost(postId), payload),
+  deletePost: async (postId: string): Promise<AxiosPromise<void>> =>
     axios.delete(postsUrls.deletePost(postId)),
-  getPost: async (postId: number): Promise<AxiosPromise<IPost>> =>
+  getPost: async (postId: string): Promise<AxiosPromise<IPost>> =>
     axios.get(postsUrls.getPost(postId)),
-  likePost: async (postId: number): Promise<AxiosPromise<{ likes: number }>> =>
+  likePost: async (postId: string): Promise<AxiosPromise<{ likes: number }>> =>
     axios.post(postsUrls.likePost(postId)),
 };

@@ -1,7 +1,7 @@
 import { IPost } from "@/entities/posts/model/types";
 
 export interface IUser {
-  id: number;
+  id: string;
   firstName: string;
   lastName: string;
   email: string;

@@ -6,16 +6,16 @@ import { IUser } from "@/entities/user/model/types";
 import { api } from "@/shared/lib/api";
 
 export const $posts = createStore<IPost[]>([]);
+export const $post = createStore<IPost | null>(null);
 
 export const setPosts = createEvent<IPost[]>();
 export const getAllPosts = createEvent();
 export const getMePosts = createEvent();
 export const createPost = createEvent<CreatePostProps>();
-export const deletePost = createEvent<{ id: number }>();
-
-// ------------------------------------------------------------------------------------
-
-$posts.on(setPosts, (_, payload) => payload.reverse());
+export const deletePost = createEvent<{ id: string }>();
+export const getPost = createEvent<{ id: string }>();
+export const clearPost = createEvent();
+export const updatePost = createEvent<{ id: string; payload: CreatePostProps }>();
 
 // ------------------------------------------------------------------------------------
 
@@ -55,7 +55,7 @@ export const createPostFx = createEffect(async (payload: CreatePostProps) => {
   }
 });
 
-export const deletePostFx = createEffect(async ({ id }: { id: number }) => {
+export const deletePostFx = createEffect(async ({ id }: { id: string }) => {
   try {
     const { data } = await api.posts.deletePost(id);
 
@@ -66,6 +66,31 @@ export const deletePostFx = createEffect(async ({ id }: { id: number }) => {
     return null;
   }
 });
+
+export const getPostFx = createEffect(async ({ id }: { id: string }) => {
+  try {
+    const { data } = await api.posts.getPost(id);
+
+    console.log("getPostByIdFx IPost", data);
+    return data;
+  } catch (e) {
+    console.log("getPostByIdFxError", e);
+    return null;
+  }
+});
+
+export const updatePostFx = createEffect(
+  async ({ id, payload }: { id: string; payload: CreatePostProps }) => {
+    try {
+      const { data } = await api.posts.updatePost(id, payload); // Запрос к API для обновления
+      console.log("updatePostFx", data);
+      return data;
+    } catch (e) {
+      console.log("updatePostFxError", e);
+      return null;
+    }
+  },
+);
 
 // ------------------------------------------------------------------------------------
 
@@ -121,6 +146,34 @@ sample({
   target: getMePosts,
 });
 
+sample({
+  clock: getPost,
+  target: getPostFx,
+});
+
+sample({
+  clock: updatePost,
+  target: updatePostFx,
+});
+
+sample({
+  clock: updatePostFx.doneData,
+  filter: (post): post is IPost => post !== null,
+  target: $post,
+});
+
+sample({
+  clock: updatePostFx.doneData,
+  target: [getMePosts, getAllPosts],
+});
+
+// ------------------------------------------------------------------------------------
+
+$posts.on(setPosts, (_, payload) => payload.reverse());
+
+$post.on(getPostFx.doneData, (_, post) => post).reset(clearPost);
+
 // ------------------------------------------------------------------------------------
 
 export const $createPostLoading = createPostFx.pending;
+export const $updatePostLoading = createPostFx.pending;
